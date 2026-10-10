@@ -1,5 +1,5 @@
 import { createRootRoute, Outlet, Link } from '@tanstack/react-router'
-import { useState, useEffect } from 'react'
+
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -50,7 +50,7 @@ function RootComponent() {
                   <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/negotiation-process-serving">Specialized Process Serving</Link>
                   <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/hr-strategy-training">Strategic HR & People Risk</Link>
                   <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/hr-strategy-training">Executive & Governance Training</Link>
-                  <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/executive-zenith">Boardroom Strategic Advisory</Link>
+                  <a className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" href="/#">Boardroom Strategic Advisory</a>
                 </div>
               </div>
             </div>
@@ -107,7 +107,7 @@ function RootComponent() {
                 <Link className="hover:text-primary transition-colors" to="/">Public Sector Agencies</Link>
                 <Link className="hover:text-primary transition-colors" to="/">Private Enterprise</Link>
                 <Link className="hover:text-primary transition-colors" to="/services/hr-strategy-training">Governance Training</Link>
-                <Link className="hover:text-primary transition-colors" to="/executive-zenith">Executive Advisory</Link>
+                <a className="hover:text-primary transition-colors" href="/#">Executive Advisory</a>
                 <Link className="hover:text-primary transition-colors" to="/">ESG Strategic Insights</Link>
               </div>
             </div>

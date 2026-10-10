@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Link } from '@tanstack/react-router'
+
 
 export const Route = createFileRoute('/services/hr-strategy-training')({
   component: ServicesHrStrategyTrainingHolisticConceptConsulting,
@@ -665,21 +665,21 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 <div className="grid grid-cols-1 md:grid-cols-2 gap-space-md">
 <div className="flex flex-col gap-1.5">
 <label className="font-label-sm text-label-sm text-on-surface font-semibold" htmlFor="client-name">Full Name *</label>
-<input className="h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="client-name" placeholder="e.g. Dr. Jordan Lee" required="" type="text"/>
+<input className="h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="client-name" placeholder="e.g. Dr. Jordan Lee" required type="text"/>
 </div>
 <div className="flex flex-col gap-1.5">
 <label className="font-label-sm text-label-sm text-on-surface font-semibold" htmlFor="client-email">Executive Corporate Email *</label>
-<input className="h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="client-email" placeholder="jlee@organization.gov" required="" type="email"/>
+<input className="h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="client-email" placeholder="jlee@organization.gov" required type="email"/>
 </div>
 </div>
 <div className="grid grid-cols-1 md:grid-cols-2 gap-space-md">
 <div className="flex flex-col gap-1.5">
 <label className="font-label-sm text-label-sm text-on-surface font-semibold" htmlFor="client-org">Organization / Agency *</label>
-<input className="h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="client-org" placeholder="Public Agency or Corporate Entity" required="" type="text"/>
+<input className="h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="client-org" placeholder="Public Agency or Corporate Entity" required type="text"/>
 </div>
 <div className="flex flex-col gap-1.5">
 <label className="font-label-sm text-label-sm text-on-surface font-semibold" htmlFor="service-stream">Primary Advisory Requirement *</label>
-<select className="h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="service-stream" required="">
+<select className="h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="service-stream" required>
 <option value="">Select Service Area</option>
 <option value="hr-consulting">HR Consulting & Climate Audit</option>
 <option value="interim-leadership">Fractional / Interim Senior HR Leadership</option>
@@ -712,7 +712,7 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 </div>
 <div className="flex flex-col gap-1.5">
 <label className="font-label-sm text-label-sm text-on-surface font-semibold" htmlFor="mandate-details">Mandate Scope & Organizational Context</label>
-<textarea className="p-4 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="mandate-details" placeholder="Outline key organizational priorities, urgent timeline considerations, or specific labor challenges..." rows="3"></textarea>
+<textarea className="p-4 rounded-lg bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="mandate-details" placeholder="Outline key organizational priorities, urgent timeline considerations, or specific labor challenges..." rows={3}></textarea>
 </div>
 <div className="flex items-center gap-3 pt-2">
 <input className="w-4 h-4 rounded text-primary focus:ring-primary" id="nda-req" type="checkbox"/>

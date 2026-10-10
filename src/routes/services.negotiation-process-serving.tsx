@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Link } from '@tanstack/react-router'
+
 
 export const Route = createFileRoute('/services/negotiation-process-serving')({
   component: ServicesNegotiationProcessServingHolisticConceptConsulting,
@@ -8,7 +8,8 @@ export const Route = createFileRoute('/services/negotiation-process-serving')({
 function ServicesNegotiationProcessServingHolisticConceptConsulting() {
   return (
     <>
-      <div className="flex flex-col w-full">
+      <main className="w-full pt-20 bg-background">
+<div className="flex flex-col w-full">
 {/*  Immersive Editorial Top Banner / Hero  */}
 <section className="relative w-full bg-surface-container-low overflow-hidden pt-12 pb-20">
 {/*  Ambient Luminous Mesh Accents inspired by radial logo  */}
@@ -85,7 +86,7 @@ function ServicesNegotiationProcessServingHolisticConceptConsulting() {
 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 {/*  Negotiation Focal Graphic Card  */}
 <div className="relative bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden group">
-<div className="h-64 w-full bg-cover bg-center relative" data-alt="A refined corporate boardroom table overlooking an expansive high-floor skyline, sunlight falling onto organized executive briefing folders and an elegant glass water carafe in serene tones of azure and light lime green, conveying intellectual dispute resolution and calm mediation." style={{ backgroundImage: 'url(\'https' }}>
+<div className="h-64 w-full bg-cover bg-center relative" data-alt="A refined corporate boardroom table overlooking an expansive high-floor skyline, sunlight falling onto organized executive briefing folders and an elegant glass water carafe in serene tones of azure and light lime green, conveying intellectual dispute resolution and calm mediation." style={{"backgroundImage":"url('https"}}>
 <div className="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/40 to-transparent"></div>
 <div className="absolute bottom-6 left-6 right-6">
 <span className="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm uppercase tracking-wider font-bold inline-block mb-2">Practice 01</span>
@@ -96,7 +97,7 @@ function ServicesNegotiationProcessServingHolisticConceptConsulting() {
 </div>
 {/*  Process Serving Focal Graphic Card  */}
 <div className="relative bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden group">
-<div className="h-64 w-full bg-cover bg-center relative" data-alt="Close up perspective of clean, crisp legal briefs and notarized documents bearing official embossed stamps, alongside a modern tablet exhibiting encrypted timestamp coordinates, under cool soft studio illumination with vibrant azure and sage undertones, representing professional legal delivery." style={{ backgroundImage: 'url(\'https' }}>
+<div className="h-64 w-full bg-cover bg-center relative" data-alt="Close up perspective of clean, crisp legal briefs and notarized documents bearing official embossed stamps, alongside a modern tablet exhibiting encrypted timestamp coordinates, under cool soft studio illumination with vibrant azure and sage undertones, representing professional legal delivery." style={{"backgroundImage":"url('https"}}>
 <div className="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/40 to-transparent"></div>
 <div className="absolute bottom-6 left-6 right-6">
 <span className="px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider font-bold inline-block mb-2">Practice 02</span>
@@ -444,13 +445,13 @@ function ServicesNegotiationProcessServingHolisticConceptConsulting() {
 {/*  Interactive Switcher Tab Bar  */}
 <div className="flex justify-center mb-8">
 <div className="inline-flex p-1.5 rounded-full bg-surface-container shadow-inner">
-<button className="px-5 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-primary font-bold shadow-sm transition-all" id="tab-all" onClick={() => {}}>
+<button className="px-5 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-primary font-bold shadow-sm transition-all" id="tab-all" onClick={() => { /* filterMatrix('all') */ }}>
             Comprehensive Scope
           </button>
-<button className="px-5 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="tab-negotiation" onClick={() => {}}>
+<button className="px-5 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="tab-negotiation" onClick={() => { /* filterMatrix('negotiation') */ }}>
             Negotiation & Mediation
           </button>
-<button className="px-5 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="tab-process" onClick={() => {}}>
+<button className="px-5 py-2 rounded-full font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="tab-process" onClick={() => { /* filterMatrix('process') */ }}>
             Process Server Division
           </button>
 </div>
@@ -518,7 +519,7 @@ Single point of executive contact with designated legal project manager
 {/*  Visual & Badge Side  */}
 <div className="lg:col-span-5 relative">
 <div className="relative rounded-xl overflow-hidden shadow-xl bg-surface-container-lowest">
-<div className="h-80 w-full bg-cover bg-center" data-alt="A distinguished professional legal consultant seated in an architectural glass-walled library, discussing documents with an associate, balanced lighting with vibrant lime and sky blue accents reflecting the firm's brand identity." style={{ backgroundImage: 'url(\'https' }}></div>
+<div className="h-80 w-full bg-cover bg-center" data-alt="A distinguished professional legal consultant seated in an architectural glass-walled library, discussing documents with an associate, balanced lighting with vibrant lime and sky blue accents reflecting the firm's brand identity." style={{"backgroundImage":"url('https"}}></div>
 <div className="p-6 bg-surface-container-lowest">
 <div className="flex items-center gap-3 mb-2">
 <span className="w-3 h-3 rounded-full bg-secondary-fixed-dim"></span>
@@ -616,15 +617,15 @@ Single point of executive contact with designated legal project manager
 </div>
 {/*  Interactive File Dispatch Form Card  */}
 <div className="lg:col-span-6 bg-surface-container-lowest p-6 lg:p-8 rounded-xl shadow-lg">
-<form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+<form className="space-y-4" onSubmit={(e) => { e.preventDefault(); /* handlePortalSubmit(event) */ }}>
 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div>
 <label className="block font-label-sm text-label-sm text-on-surface mb-1">Retainer / Counsel Name</label>
-<input className="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="e.g. Rachel Foster, LL.B." required="" type="text"/>
+<input className="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="e.g. Rachel Foster, LL.B." required type="text"/>
 </div>
 <div>
 <label className="block font-label-sm text-label-sm text-on-surface mb-1">Organization / Law Firm</label>
-<input className="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Firm or Enterprise Name" required="" type="text"/>
+<input className="w-full h-11 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20" placeholder="Firm or Enterprise Name" required type="text"/>
 </div>
 </div>
 <div>
@@ -693,6 +694,7 @@ Single point of executive contact with designated legal project manager
 </div>
 </section>
 
+      </main>
     </>
   )
 }

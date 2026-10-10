@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { Link } from '@tanstack/react-router'
+
 
 export const Route = createFileRoute('/about')({
   component: AboutUsHolisticConceptConsulting,
@@ -8,7 +8,8 @@ export const Route = createFileRoute('/about')({
 function AboutUsHolisticConceptConsulting() {
   return (
     <>
-      <div className="flex flex-col w-full">
+      <main className="w-full pt-20 bg-background">
+<div className="flex flex-col w-full">
 {/*  Subtle Ambient Glow Orbs  */}
 <div className="relative w-full overflow-hidden">
 <div className="absolute top-12 left-1/4 w-96 h-96 rounded-full bg-secondary-fixed/15 blur-3xl pointer-events-none -z-10"></div>
@@ -606,6 +607,7 @@ function AboutUsHolisticConceptConsulting() {
 </section>
 </div>
 </div>
+      </main>
     </>
   )
 }

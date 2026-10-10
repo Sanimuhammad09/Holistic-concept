@@ -27,7 +27,7 @@ function IndexComponent() {
   }
 
   useEffect(() => {
-    let interval: NodeJS.Timeout
+    let interval: ReturnType<typeof setInterval>
     if (isPlaying) {
       interval = setInterval(nextSlide, 5500)
     }
