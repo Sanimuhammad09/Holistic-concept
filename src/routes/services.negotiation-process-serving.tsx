@@ -681,9 +681,9 @@ Single point of executive contact with designated legal project manager
 </div>
 </div>
 <div className="flex flex-col sm:flex-row items-center gap-4 shrink-0 w-full sm:w-auto">
-<a className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md font-bold hover:bg-surface-container-low transition-all flex items-center justify-center gap-2 shadow-md" href="tel:18004227872">
+<a className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md font-bold hover:bg-surface-container-low transition-all flex items-center justify-center gap-2 shadow-md" href="tel:+14033594972">
 <span className="material-symbols-outlined text-primary text-[18px]">call</span>
-<span>1-800-HCC-STRAT</span>
+<span>+1 (403) 359-4972</span>
 </a>
 <a className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-bold hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md" data-path="request-consultation" href="#">
 <span>Direct Retainer Request</span>

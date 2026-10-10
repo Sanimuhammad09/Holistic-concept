@@ -1,4 +1,5 @@
 import { createRootRoute, Outlet, Link } from '@tanstack/react-router'
+import { useState } from 'react'
 
 
 export const Route = createRootRoute({
@@ -6,6 +7,7 @@ export const Route = createRootRoute({
 })
 
 function RootComponent() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <div className="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col">
       <header className="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
@@ -16,7 +18,7 @@ function RootComponent() {
                 <span className="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-pulse"></span>
                 Confidential Advisory Hotline
               </span>
-              <span className="hidden md:inline text-on-surface-variant">Phone: 1-800-HCC-STRAT</span>
+              <span className="hidden md:inline text-on-surface-variant">Phone: +1 (403) 359-4972</span>
               <span className="hidden sm:inline text-on-surface-variant">Email: consult@holisticconcept.com</span>
             </div>
             <div className="flex items-center gap-space-md">
@@ -28,7 +30,7 @@ function RootComponent() {
         </div>
         <div className="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-lg">
           <Link className="flex items-center gap-space-sm shrink-0" to="/">
-            <img alt="Holistic Logo" className="h-8 w-auto object-contain" src="/logo.png" onError={(e) => e.currentTarget.style.display = 'none'} />
+            <img alt="Holistic Logo" className="h-10 w-auto object-contain rounded-md" src="/logo.jpg" onError={(e) => e.currentTarget.style.display = 'none'} />
             <div className="flex flex-col">
               <span className="font-headline-sm text-headline-sm text-primary leading-tight font-bold tracking-tight">Holistic Concept Consulting</span>
               <span className="font-caption text-caption text-on-surface-variant tracking-wider uppercase">Strategic & Ethical Solutions</span>
@@ -54,75 +56,107 @@ function RootComponent() {
                 </div>
               </div>
             </div>
-            <Link className="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" to="/">Sectors</Link>
-            <Link className="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" to="/">Insights</Link>
-            <Link className="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" to="/">Contact</Link>
+            <Link className="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" to="/sectors">Sectors</Link>
+            <Link className="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" to="/insights">Insights</Link>
+            <Link className="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" to="/contact">Contact</Link>
           </nav>
           <div className="flex items-center gap-space-md">
-            <Link className="px-5 py-2.5 rounded-full font-label-md text-label-md bg-gradient-to-r from-primary to-primary-container text-on-primary shadow-[0_4px_14px_rgba(0,97,148,0.25)] hover:shadow-[0_4px_18px_rgba(65,105,0,0.35)] transition-all flex items-center gap-space-xs" to="/">
+            <Link className="hidden sm:flex px-5 py-2.5 rounded-full font-label-md text-label-md bg-gradient-to-r from-primary to-primary-container text-on-primary shadow-[0_4px_14px_rgba(0,97,148,0.25)] hover:shadow-[0_4px_18px_rgba(65,105,0,0.35)] transition-all items-center gap-space-xs" to="/contact">
               <span>Request Consultation</span>
               <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
             </Link>
-            <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+            <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="xl:hidden p-2 text-on-surface hover:bg-surface-container rounded-lg">
+              <span className="material-symbols-outlined">{mobileMenuOpen ? 'close' : 'menu'}</span>
+            </button>
+            <div className="w-8 h-8 rounded-full bg-primary hidden sm:flex items-center justify-center shrink-0">
               <span className="material-symbols-outlined text-on-primary text-[18px]">person</span>
             </div>
           </div>
         </div>
+        
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="xl:hidden absolute top-[120px] left-0 right-0 bg-surface border-t border-outline-variant shadow-lg max-h-[calc(100vh-120px)] overflow-y-auto">
+            <nav className="flex flex-col p-4 gap-2">
+              <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container" to="/">Home</Link>
+              <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container" to="/about">About Us</Link>
+              
+              <div className="px-4 py-2 font-label-md text-label-md font-bold text-on-surface mt-2">Services</div>
+              <div className="flex flex-col pl-4 border-l-2 border-surface-container ml-6 gap-1">
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/investigations">Investigations & Forensic Review</Link>
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/negotiation-process-serving">Strategic Negotiation</Link>
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/policies-accessibility">Policies & Regulatory Compliance</Link>
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/policies-accessibility">Accessibility Standards (AODA/ADA)</Link>
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/negotiation-process-serving">Specialized Process Serving</Link>
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/hr-strategy-training">Strategic HR & People Risk</Link>
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/hr-strategy-training">Executive & Governance Training</Link>
+                  <a onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" href="/#">Boardroom Strategic Advisory</a>
+              </div>
+
+              <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container mt-2" to="/sectors">Sectors</Link>
+              <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container" to="/insights">Insights</Link>
+              <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container" to="/contact">Contact</Link>
+              
+              <Link onClick={() => setMobileMenuOpen(false)} className="mt-4 px-5 py-3 rounded-full font-label-md text-label-md bg-primary text-on-primary flex items-center justify-center gap-space-xs" to="/contact">
+                <span>Request Consultation</span>
+                <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+              </Link>
+            </nav>
+          </div>
+        )}
       </header>
 
       <main className="flex-1 w-full pt-32 bg-background flex flex-col">
         <Outlet />
       </main>
 
-      <footer className="w-full bg-surface-container-low pt-space-xl pb-space-lg shadow-[0_-1px_12px_rgba(0,0,0,0.03)] mt-auto">
+      <footer className="w-full bg-[#0f172a] text-slate-300 pt-space-xl pb-space-lg mt-auto border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl border-b border-slate-800">
             <div className="lg:col-span-2 flex flex-col gap-space-md">
               <div className="flex items-center gap-space-sm">
-                <div className="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
-                  <span className="material-symbols-outlined text-[18px]">shield</span>
-                </div>
-                <span className="font-headline-sm text-headline-sm text-primary font-bold">Holistic Concept Consulting</span>
+                <img alt="Holistic Logo" className="h-12 w-auto object-contain rounded-md" src="/logo.jpg" onError={(e) => e.currentTarget.style.display = 'none'} />
+                <span className="font-headline-sm text-headline-sm text-white font-bold">Holistic Concept Consulting</span>
               </div>
-              <p className="font-body-sm text-body-sm text-on-surface-variant max-w-md">Trusted and recognized for delivering ethical, strategic, and practical solutions across complex corporate landscapes, public sector mandates, and executive transitions.</p>
+              <p className="font-body-sm text-body-sm text-slate-400 max-w-md">Trusted and recognized for delivering ethical, strategic, and practical solutions across complex corporate landscapes, public sector mandates, and executive transitions.</p>
               <div className="flex items-center gap-space-sm pt-2">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm"><span className="w-2 h-2 rounded-full bg-secondary"></span>Verified High-Trust Advisory</span>
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm"><span className="material-symbols-outlined text-[14px]">verified</span>ISO 9001 Aligned</span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800 text-slate-300 font-label-sm text-label-sm"><span className="w-2 h-2 rounded-full bg-secondary"></span>Verified High-Trust Advisory</span>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800 text-slate-300 font-label-sm text-label-sm"><span className="material-symbols-outlined text-[14px]">verified</span>ISO 9001 Aligned</span>
               </div>
             </div>
             <div className="flex flex-col gap-space-sm">
-              <span className="font-title-md text-title-md text-on-surface">Core Services</span>
-              <div className="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
-                <Link className="hover:text-primary transition-colors" to="/services/investigations">Investigations & Audit</Link>
-                <Link className="hover:text-primary transition-colors" to="/services/negotiation-process-serving">Strategic Negotiation</Link>
-                <Link className="hover:text-primary transition-colors" to="/services/policies-accessibility">Policy Architecture</Link>
-                <Link className="hover:text-primary transition-colors" to="/services/policies-accessibility">Accessibility (AODA/ADA)</Link>
-                <Link className="hover:text-primary transition-colors" to="/services/negotiation-process-serving">Process Serving Unit</Link>
-                <Link className="hover:text-primary transition-colors" to="/services/hr-strategy-training">HR & People Risk</Link>
+              <span className="font-title-md text-title-md text-white">Core Services</span>
+              <div className="flex flex-col gap-2 font-body-sm text-body-sm text-slate-400">
+                <Link className="hover:text-white transition-colors" to="/services/investigations">Investigations & Audit</Link>
+                <Link className="hover:text-white transition-colors" to="/services/negotiation-process-serving">Strategic Negotiation</Link>
+                <Link className="hover:text-white transition-colors" to="/services/policies-accessibility">Policy Architecture</Link>
+                <Link className="hover:text-white transition-colors" to="/services/policies-accessibility">Accessibility (AODA/ADA)</Link>
+                <Link className="hover:text-white transition-colors" to="/services/negotiation-process-serving">Process Serving Unit</Link>
+                <Link className="hover:text-white transition-colors" to="/services/hr-strategy-training">HR & People Risk</Link>
               </div>
             </div>
             <div className="flex flex-col gap-space-sm">
-              <span className="font-title-md text-title-md text-on-surface">Governance & Sectors</span>
-              <div className="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
-                <Link className="hover:text-primary transition-colors" to="/">Public Sector Agencies</Link>
-                <Link className="hover:text-primary transition-colors" to="/">Private Enterprise</Link>
-                <Link className="hover:text-primary transition-colors" to="/services/hr-strategy-training">Governance Training</Link>
-                <a className="hover:text-primary transition-colors" href="/#">Executive Advisory</a>
-                <Link className="hover:text-primary transition-colors" to="/">ESG Strategic Insights</Link>
+              <span className="font-title-md text-title-md text-white">Governance & Sectors</span>
+              <div className="flex flex-col gap-2 font-body-sm text-body-sm text-slate-400">
+                <Link className="hover:text-white transition-colors" to="/sectors">Public Sector Agencies</Link>
+                <Link className="hover:text-white transition-colors" to="/sectors">Private Enterprise</Link>
+                <Link className="hover:text-white transition-colors" to="/services/hr-strategy-training">Governance Training</Link>
+                <a className="hover:text-white transition-colors" href="/#">Executive Advisory</a>
+                <Link className="hover:text-white transition-colors" to="/insights">ESG Strategic Insights</Link>
               </div>
             </div>
             <div className="flex flex-col gap-space-sm">
-              <span className="font-title-md text-title-md text-on-surface">Legal & Compliance</span>
-              <div className="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
-                <Link className="hover:text-primary transition-colors" to="/">Confidential Escrow</Link>
-                <Link className="hover:text-primary transition-colors" to="/">Privacy Framework</Link>
-                <Link className="hover:text-primary transition-colors" to="/">Whistleblower Protocol</Link>
-                <Link className="hover:text-primary transition-colors" to="/">Terms of Retainer</Link>
-                <Link className="hover:text-primary transition-colors" to="/">Security & Data Ethics</Link>
+              <span className="font-title-md text-title-md text-white">Legal & Compliance</span>
+              <div className="flex flex-col gap-2 font-body-sm text-body-sm text-slate-400">
+                <Link className="hover:text-white transition-colors" to="/contact">Confidential Escrow</Link>
+                <Link className="hover:text-white transition-colors" to="/contact">Privacy Framework</Link>
+                <Link className="hover:text-white transition-colors" to="/contact">Whistleblower Protocol</Link>
+                <Link className="hover:text-white transition-colors" to="/contact">Terms of Retainer</Link>
+                <Link className="hover:text-white transition-colors" to="/contact">Security & Data Ethics</Link>
               </div>
             </div>
           </div>
-          <div className="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-caption text-caption">
+          <div className="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-slate-500 font-caption text-caption">
             <div className="flex items-center gap-space-sm">
               <span className="material-symbols-outlined text-[16px] text-primary">lock</span>
               <span>All strategic dialogues and disclosures are protected under strict client-advisory confidentiality agreements.</span>

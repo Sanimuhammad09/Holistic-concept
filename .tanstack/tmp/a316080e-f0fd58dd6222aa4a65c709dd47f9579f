@@ -11,6 +11,9 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as InsightsRouteImport } from './routes/insights'
+import { Route as SectorsRouteImport } from './routes/sectors'
 import { Route as ServicesHrStrategyTrainingRouteImport } from './routes/services.hr-strategy-training'
 import { Route as ServicesInvestigationsRouteImport } from './routes/services.investigations'
 import { Route as ServicesNegotiationProcessServingRouteImport } from './routes/services.negotiation-process-serving'
@@ -24,6 +27,21 @@ const IndexRoute = IndexRouteImport.update({
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InsightsRoute = InsightsRouteImport.update({
+  id: '/insights',
+  path: '/insights',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SectorsRoute = SectorsRouteImport.update({
+  id: '/sectors',
+  path: '/sectors',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServicesHrStrategyTrainingRoute =
@@ -53,6 +71,9 @@ const ServicesPoliciesAccessibilityRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/insights': typeof InsightsRoute
+  '/sectors': typeof SectorsRoute
   '/services/hr-strategy-training': typeof ServicesHrStrategyTrainingRoute
   '/services/investigations': typeof ServicesInvestigationsRoute
   '/services/negotiation-process-serving': typeof ServicesNegotiationProcessServingRoute
@@ -61,6 +82,9 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/insights': typeof InsightsRoute
+  '/sectors': typeof SectorsRoute
   '/services/hr-strategy-training': typeof ServicesHrStrategyTrainingRoute
   '/services/investigations': typeof ServicesInvestigationsRoute
   '/services/negotiation-process-serving': typeof ServicesNegotiationProcessServingRoute
@@ -70,6 +94,9 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/insights': typeof InsightsRoute
+  '/sectors': typeof SectorsRoute
   '/services/hr-strategy-training': typeof ServicesHrStrategyTrainingRoute
   '/services/investigations': typeof ServicesInvestigationsRoute
   '/services/negotiation-process-serving': typeof ServicesNegotiationProcessServingRoute
@@ -80,6 +107,9 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/contact'
+    | '/insights'
+    | '/sectors'
     | '/services/hr-strategy-training'
     | '/services/investigations'
     | '/services/negotiation-process-serving'
@@ -88,6 +118,9 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/contact'
+    | '/insights'
+    | '/sectors'
     | '/services/hr-strategy-training'
     | '/services/investigations'
     | '/services/negotiation-process-serving'
@@ -96,6 +129,9 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/contact'
+    | '/insights'
+    | '/sectors'
     | '/services/hr-strategy-training'
     | '/services/investigations'
     | '/services/negotiation-process-serving'
@@ -105,6 +141,9 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  ContactRoute: typeof ContactRoute
+  InsightsRoute: typeof InsightsRoute
+  SectorsRoute: typeof SectorsRoute
   ServicesHrStrategyTrainingRoute: typeof ServicesHrStrategyTrainingRoute
   ServicesInvestigationsRoute: typeof ServicesInvestigationsRoute
   ServicesNegotiationProcessServingRoute: typeof ServicesNegotiationProcessServingRoute
@@ -125,6 +164,27 @@ declare module '@tanstack/react-router' {
       path: '/about'
       fullPath: '/about'
       preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insights': {
+      id: '/insights'
+      path: '/insights'
+      fullPath: '/insights'
+      preLoaderRoute: typeof InsightsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sectors': {
+      id: '/sectors'
+      path: '/sectors'
+      fullPath: '/sectors'
+      preLoaderRoute: typeof SectorsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/services/hr-strategy-training': {
@@ -161,6 +221,9 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  ContactRoute: ContactRoute,
+  InsightsRoute: InsightsRoute,
+  SectorsRoute: SectorsRoute,
   ServicesHrStrategyTrainingRoute: ServicesHrStrategyTrainingRoute,
   ServicesInvestigationsRoute: ServicesInvestigationsRoute,
   ServicesNegotiationProcessServingRoute:

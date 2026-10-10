@@ -8,7 +8,8 @@ export const Route = createFileRoute('/services/hr-strategy-training')({
 function ServicesHrStrategyTrainingHolisticConceptConsulting() {
   return (
     <>
-      <div className="flex flex-col w-full">
+      <main className="w-full pt-20 bg-background">
+<div className="flex flex-col w-full">
 {/*  Top Hero Header Layer (Integrated under header space)  */}
 <section className="relative w-full overflow-hidden bg-surface-container-low py-space-xl lg:py-24">
 {/*  Ambient mesh glow circles inspired by lime and azure radial emblem  */}
@@ -321,10 +322,10 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 </div>
 {/*  Client-side Interactive Filter Tab Bar  */}
 <div className="flex flex-wrap items-center gap-2 p-1.5 rounded-xl bg-surface-container-low max-w-fit" id="catalog-filter-bar">
-<button className="px-5 py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm font-bold transition-all" id="btn-all" onClick={() => {}}>All Tracks</button>
-<button className="px-5 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="btn-exec" onClick={() => {}}>Executive Tier</button>
-<button className="px-5 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="btn-managers" onClick={() => {}}>People Managers</button>
-<button className="px-5 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="btn-staff" onClick={() => {}}>Enterprise & Staff</button>
+<button className="px-5 py-2 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm font-bold transition-all" id="btn-all" onClick={() => { /* filterCatalog('all') */ }}>All Tracks</button>
+<button className="px-5 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="btn-exec" onClick={() => { /* filterCatalog('exec') */ }}>Executive Tier</button>
+<button className="px-5 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="btn-managers" onClick={() => { /* filterCatalog('managers') */ }}>People Managers</button>
+<button className="px-5 py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" id="btn-staff" onClick={() => { /* filterCatalog('staff') */ }}>Enterprise & Staff</button>
 </div>
 {/*  Modules Catalog Cards Grid  */}
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="module-grid">
@@ -655,13 +656,13 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 <span className="material-symbols-outlined text-primary text-[28px]">phone_in_talk</span>
 <div className="flex flex-col">
 <span className="font-title-md text-label-md text-on-surface font-bold">Time-Sensitive Crisis Intervention?</span>
-<span className="font-caption text-caption text-on-surface-variant">Advisory Hotline: 1-800-HCC-STRAT (Ext. 4)</span>
+<span className="font-caption text-caption text-on-surface-variant">Advisory Hotline: +1 (403) 359-4972 (Ext. 4)</span>
 </div>
 </div>
 </div>
 {/*  Right Column: Consultation Form  */}
 <div className="lg:col-span-7 bg-surface-container-low p-space-lg lg:p-space-xl rounded-2xl">
-<form className="flex flex-col gap-space-md" onSubmit={(e) => e.preventDefault()}>
+<form className="flex flex-col gap-space-md" onSubmit={(e) => { e.preventDefault(); /* handleFormSubmit(event) */ }}>
 <div className="grid grid-cols-1 md:grid-cols-2 gap-space-md">
 <div className="flex flex-col gap-1.5">
 <label className="font-label-sm text-label-sm text-on-surface font-semibold" htmlFor="client-name">Full Name *</label>
@@ -736,6 +737,7 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 {/*  Interactive Filtering & Form JS Logic  */}
 
 </div>
+      </main>
     </>
   )
 }

@@ -379,7 +379,7 @@ function IndexComponent() {
                     </div>
                     <div className="flex flex-col">
                       <span className="font-caption text-caption uppercase tracking-wider text-surface-variant font-semibold">Priority Direct Line</span>
-                      <span className="font-title-md text-title-md font-bold text-on-primary">1-800-HCC-STRAT</span>
+                      <span className="font-title-md text-title-md font-bold text-on-primary">+1 (403) 359-4972</span>
                     </div>
                   </div>
                   <div className="flex items-center gap-4 p-4 rounded-2xl bg-surface-container-lowest/10 backdrop-blur-md">
