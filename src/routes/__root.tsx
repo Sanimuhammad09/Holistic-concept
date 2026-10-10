@@ -1,5 +1,6 @@
 import { createRootRoute, Outlet, Link } from '@tanstack/react-router'
 import { useState } from 'react'
+import { WhatsAppWidget } from '../components/WhatsAppWidget'
 
 
 export const Route = createRootRoute({
@@ -167,6 +168,7 @@ function RootComponent() {
           </div>
         </div>
       </footer>
+      <WhatsAppWidget />
     </div>
   )
 }
