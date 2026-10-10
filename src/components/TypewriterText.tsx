@@ -24,8 +24,8 @@ export function TypewriterText({ text, delay = 0, speed = 50, className = '', cu
       
       const typeInterval = setInterval(() => {
         if (currentIndex < text.length) {
-          setDisplayedText((prev) => prev + text.charAt(currentIndex));
           currentIndex++;
+          setDisplayedText(text.slice(0, currentIndex));
         } else {
           clearInterval(typeInterval);
         }
