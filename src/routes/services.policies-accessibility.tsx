@@ -8,7 +8,8 @@ export const Route = createFileRoute('/services/policies-accessibility')({
 function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
   return (
     <>
-      <div className="flex flex-col w-full">
+      <main className="w-full pt-20 bg-background">
+<div className="flex flex-col w-full">
 {/*  Top Ambient Luminous Glow Background Container  */}
 <section className="relative w-full overflow-hidden bg-surface-container-lowest">
 <div className="absolute -top-32 right-10 w-[580px] h-[580px] bg-gradient-to-br from-secondary-fixed/20 via-primary-fixed/25 to-transparent rounded-full blur-3xl pointer-events-none"></div>
@@ -606,7 +607,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 <span className="font-caption text-caption text-on-surface-variant block">Updated Q1 2025 • 18 Pages • Formatted PDF</span>
 </div>
 </div>
-<button className="w-full sm:w-auto px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all flex items-center justify-center gap-2 shrink-0" onClick={() => {}}>
+<button className="w-full sm:w-auto px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all flex items-center justify-center gap-2 shrink-0" onClick={() => { /* simulateDownload(this) */ }}>
 <span>Instant Download</span>
 <span className="material-symbols-outlined text-[16px]">file_download</span>
 </button>
@@ -627,7 +628,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 <p className="font-body-md text-body-md text-on-surface-variant mb-8">
               Submit your organization's scope. A senior governance advisor will review your parameters under formal client-counsel privilege and provide an initial diagnostic runway within 24 business hours.
             </p>
-<form className="space-y-5" id="policy-review-form" onSubmit={(e) => e.preventDefault()}>
+<form className="space-y-5" id="policy-review-form" onSubmit={(e) => { e.preventDefault(); /* handleReviewSubmit(event) */ }}>
 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div>
 <label className="block font-label-sm text-label-sm text-on-surface mb-1.5">Executive Name & Title</label>
@@ -687,6 +688,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 {/*  Interactive script for client actions  */}
 
 </div>
+      </main>
     </>
   )
 }
