@@ -150,7 +150,7 @@ function Contact() {
 <div className="relative flex items-center">
 <span className="material-symbols-outlined absolute left-3.5 text-outline text-[18px]">category</span>
 <select className="w-full h-12 pl-10 pr-10 bg-surface-bright rounded-lg font-body-sm text-body-sm text-on-surface outline-none focus:bg-surface-container-lowest focus:shadow-md appearance-none cursor-pointer transition-all" id="practiceStream" required>
-<option disabled="" selected="" value="">Select Strategic Practice Domain...</option>
+<option disabled value="">Select Strategic Practice Domain...</option>
 <option value="investigations">Corporate Investigations & Forensic Fact-Finding</option>
 <option value="negotiation">High-Stakes Negotiation & Institutional Mediation</option>
 <option value="policies">Regulatory Policy Architecture & Compliance Audit</option>
@@ -175,7 +175,7 @@ function Contact() {
 </div>
 </label>
 <label className="cursor-pointer">
-<input checked="" className="peer sr-only" name="urgency" type="radio" value="priority"/>
+<input defaultChecked className="peer sr-only" name="urgency" type="radio" value="priority"/>
 <div className="p-3.5 rounded-lg bg-surface-bright peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:shadow-sm transition-all flex flex-col gap-1">
 <span className="font-label-sm text-label-sm font-bold">Priority Triage</span>
 <span className="font-caption text-caption opacity-90">Mobilization within 4-8 hours</span>
@@ -227,7 +227,7 @@ function Contact() {
 </div>
 </label>
 <label className="flex items-start gap-3 cursor-pointer">
-<input checked="" className="mt-1 w-4 h-4 rounded text-secondary focus:ring-secondary accent-secondary" required type="checkbox"/>
+<input defaultChecked className="mt-1 w-4 h-4 rounded text-secondary focus:ring-secondary accent-secondary" required type="checkbox"/>
 <div className="flex flex-col">
 <span className="font-label-sm text-label-sm text-on-surface font-semibold">Attestation of Preliminary Counsel Privilege</span>
 <span className="font-caption text-caption text-on-surface-variant">I certify that this submission constitutes a bona fide inquiry for professional advisory and litigation logistics.</span>
