@@ -1,5 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useState, useEffect, useCallback } from 'react'
+import { AnimatedSection } from '../components/AnimatedSection'
+import { TypewriterText } from '../components/TypewriterText'
+import { SEO } from '../components/SEO'
 
 export const Route = createFileRoute('/')({
   component: IndexComponent,
@@ -36,6 +39,10 @@ function IndexComponent() {
 
   return (
     <main className="w-full pt-20 bg-background">
+      <SEO 
+        title="Holistic Concept Consulting | Strategic & Ethical Solutions" 
+        description="Strengthening governance and organizational effectiveness across private enterprise and public sector mandates through objective counsel and institutional stewardship." 
+      />
       <div className="flex flex-col w-full">
         {/* HERO SLIDER SECTION */}
         <section className="relative w-full overflow-hidden bg-on-primary-fixed text-on-primary">
@@ -57,7 +64,7 @@ function IndexComponent() {
                     <span className="font-label-sm text-label-sm tracking-wide text-secondary-fixed uppercase">Governance Architecture</span>
                   </div>
                   <h1 className="font-headline-xl text-headline-xl lg:text-[48px] lg:leading-[56px] text-on-primary font-bold tracking-tight">
-                    Ethical Governance & <br className="hidden sm:inline"/>Workplace Integrity
+                    {currentSlide === 0 ? <TypewriterText text="Ethical Governance & Workplace Integrity" speed={40} /> : "Ethical Governance & Workplace Integrity"}
                   </h1>
                   <p className="font-body-lg text-body-lg text-surface-variant max-w-2xl leading-relaxed">
                     Strengthening governance and organizational effectiveness across private enterprise and public sector mandates through objective counsel and institutional stewardship.
@@ -87,7 +94,7 @@ function IndexComponent() {
                     <span className="font-label-sm text-label-sm tracking-wide text-primary-fixed uppercase">Forensic Rigor & Discretion</span>
                   </div>
                   <h2 className="font-headline-xl text-headline-xl lg:text-[48px] lg:leading-[56px] text-on-primary font-bold tracking-tight">
-                    Independent Workplace <br className="hidden sm:inline"/>Investigations
+                    {currentSlide === 1 ? <TypewriterText text="Independent Workplace Investigations" speed={40} /> : "Independent Workplace Investigations"}
                   </h2>
                   <p className="font-body-lg text-body-lg text-surface-variant max-w-2xl leading-relaxed">
                     Objective, thorough, and confidential fact-finding conducted with strict evidentiary standards, impartiality, and boardroom-level executive reporting.
@@ -113,7 +120,7 @@ function IndexComponent() {
                     <span className="font-label-sm text-label-sm tracking-wide text-secondary-fixed uppercase">AODA / ADA & Statutory Compliance</span>
                   </div>
                   <h2 className="font-headline-xl text-headline-xl lg:text-[48px] lg:leading-[56px] text-on-primary font-bold tracking-tight">
-                    Policy Architecture & <br className="hidden sm:inline"/>Accessibility Frameworks
+                    {currentSlide === 2 ? <TypewriterText text="Policy Architecture & Accessibility Frameworks" speed={40} /> : "Policy Architecture & Accessibility Frameworks"}
                   </h2>
                   <p className="font-body-lg text-body-lg text-surface-variant max-w-2xl leading-relaxed">
                     Building compliant, inclusive, and actionable corporate policies and mandated accessibility plans that insulate organizations while advancing workplace equity.
@@ -139,7 +146,7 @@ function IndexComponent() {
                     <span className="font-label-sm text-label-sm tracking-wide text-primary-fixed uppercase">Dispute Resolution & Strategy</span>
                   </div>
                   <h2 className="font-headline-xl text-headline-xl lg:text-[48px] lg:leading-[56px] text-on-primary font-bold tracking-tight">
-                    Strategic Advisory & <br className="hidden sm:inline"/>High-Stakes Negotiation
+                    {currentSlide === 3 ? <TypewriterText text="Strategic Advisory & High-Stakes Negotiation" speed={40} /> : "Strategic Advisory & High-Stakes Negotiation"}
                   </h2>
                   <p className="font-body-lg text-body-lg text-surface-variant max-w-2xl leading-relaxed">
                     Partnering with executive leadership to resolve complex disputes, mitigate existential risk, and facilitate sustainable agreements that preserve institutional continuity.
@@ -193,7 +200,7 @@ function IndexComponent() {
         </section>
 
         {/* VISION STATEMENT BANNER */}
-        <section className="relative w-full bg-surface-container-low py-16 lg:py-20 overflow-hidden shadow-sm">
+        <AnimatedSection direction="up" className="relative w-full bg-surface-container-low py-16 lg:py-20 overflow-hidden shadow-sm">
           <div className="absolute right-8 -bottom-16 w-80 h-80 opacity-5 pointer-events-none text-primary">
             <svg fill="currentColor" viewBox="0 0 100 100">
               <circle cx="50" cy="50" r="12"></circle>
@@ -216,10 +223,10 @@ function IndexComponent() {
               Holistic Concept Consulting • Operational Credo
             </span>
           </div>
-        </section>
+        </AnimatedSection>
 
         {/* IMPACT METRICS & CREDIBILITY BAR */}
-        <section className="w-full bg-surface-container-lowest py-12 shadow-sm">
+        <AnimatedSection direction="up" delay={0.1} className="w-full bg-surface-container-lowest py-12 shadow-sm">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="flex flex-col gap-1 p-6 rounded-xl bg-surface-container-low transition-transform hover:-translate-y-1">
@@ -256,10 +263,10 @@ function IndexComponent() {
               </div>
             </div>
           </div>
-        </section>
+        </AnimatedSection>
 
         {/* CORE SERVICES PILLARS (8 SERVICES) */}
-        <section className="w-full bg-surface py-20 lg:py-28">
+        <AnimatedSection direction="up" delay={0.2} className="w-full bg-surface py-20 lg:py-28">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
               <div className="flex flex-col gap-3 max-w-2xl">
@@ -310,10 +317,10 @@ function IndexComponent() {
               ))}
             </div>
           </div>
-        </section>
+        </AnimatedSection>
 
         {/* METHODOLOGY: OUR HOLISTIC APPROACH */}
-        <section className="w-full bg-surface-container-low py-20 lg:py-28 relative overflow-hidden">
+        <AnimatedSection direction="up" delay={0.2} className="w-full bg-surface-container-low py-20 lg:py-28 relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16 relative z-10">
             <div className="flex flex-col items-center text-center max-w-3xl mx-auto gap-4">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold">
@@ -353,10 +360,10 @@ function IndexComponent() {
               ))}
             </div>
           </div>
-        </section>
+        </AnimatedSection>
 
         {/* CTA CONSULTATION */}
-        <section className="w-full bg-gradient-to-br from-on-primary-fixed via-inverse-surface to-on-primary-fixed text-on-primary py-20 lg:py-24 relative overflow-hidden">
+        <AnimatedSection direction="up" delay={0.2} className="w-full bg-gradient-to-br from-on-primary-fixed via-inverse-surface to-on-primary-fixed text-on-primary py-20 lg:py-24 relative overflow-hidden">
           <div className="absolute -right-20 -bottom-20 w-96 h-96 rounded-full bg-secondary-fixed/20 blur-[100px] pointer-events-none"></div>
           <div className="absolute -left-20 top-0 w-80 h-80 rounded-full bg-primary-container/20 blur-[100px] pointer-events-none"></div>
           <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
@@ -463,7 +470,7 @@ function IndexComponent() {
               </div>
             </div>
           </div>
-        </section>
+        </AnimatedSection>
       </div>
     </main>
   )

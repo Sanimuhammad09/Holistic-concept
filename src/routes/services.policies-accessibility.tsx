@@ -1,3 +1,5 @@
+import { AnimatedSection } from '../components/AnimatedSection'
+import { SEO } from '../components/SEO'
 import { createFileRoute } from '@tanstack/react-router'
 
 
@@ -9,9 +11,10 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
   return (
     <>
       <main className="w-full pt-20 bg-background">
+      <SEO title="Policies & Accessibility | Holistic Concept Consulting" description="Comprehensive regulatory compliance, AODA/ADA accessibility plans, and corporate policy architecture." />
 <div className="flex flex-col w-full">
 {/*  Top Ambient Luminous Glow Background Container  */}
-<section className="relative w-full overflow-hidden bg-surface-container-lowest">
+<AnimatedSection direction="up" delay={0.1} className="relative w-full overflow-hidden bg-surface-container-lowest">
 <div className="absolute -top-32 right-10 w-[580px] h-[580px] bg-gradient-to-br from-secondary-fixed/20 via-primary-fixed/25 to-transparent rounded-full blur-3xl pointer-events-none"></div>
 <div className="absolute top-1/2 -left-20 w-[420px] h-[420px] bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
 {/*  Editorial Hero Layout  */}
@@ -84,7 +87,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Section Divider with Emblem Motifs  */}
 <div className="w-full bg-surface-container py-3">
 <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-wrap items-center justify-between gap-4 text-on-surface-variant font-label-sm text-label-sm">
@@ -95,7 +98,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 </div>
 </div>
 {/*  Pillar 1: Policy Drafting & Comprehensive Review  */}
-<section className="w-full py-20 bg-surface">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
 <div className="max-w-2xl">
@@ -228,9 +231,9 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Pillar 2: Accessibility Plan Development (Biophilic Modernism / AODA, ACA, ADA Focus)  */}
-<section className="w-full py-20 bg-surface-container-low relative overflow-hidden">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface-container-low relative overflow-hidden">
 {/*  Ambient mesh gradient  */}
 <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none"></div>
 <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
@@ -352,9 +355,9 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
         </a>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  'From Policy to Practice' 4-Phase Implementation Cycle  */}
-<section className="w-full py-24 bg-surface">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-24 bg-surface">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="text-center max-w-3xl mx-auto mb-16">
 <span className="font-caption text-caption text-primary uppercase font-bold tracking-widest">Procedural Architecture</span>
@@ -437,9 +440,9 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Compliance Risk Matrix Section  */}
-<section className="w-full py-20 bg-surface-container-lowest" id="audit-matrix">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface-container-lowest" id="audit-matrix">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
 <div>
@@ -561,9 +564,9 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Download Offer & Request Policy Review Interactive Section  */}
-<section className="w-full py-20 bg-surface relative overflow-hidden">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface relative overflow-hidden">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
 {/*  Left: Sample Policy Audit Checklist Download Box  */}
@@ -684,7 +687,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Interactive script for client actions  */}
 
 </div>

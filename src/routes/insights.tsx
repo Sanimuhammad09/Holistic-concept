@@ -1,4 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { AnimatedSection } from '../components/AnimatedSection'
+import { SEO } from '../components/SEO'
 
 export const Route = createFileRoute('/insights')({
   component: Insights,
@@ -8,9 +10,10 @@ function Insights() {
   return (
     <>
       <main className="w-full pt-20 bg-background">
+      <SEO title="Insights & Research | Holistic Concept Consulting" description="Read our latest insights, case studies, and regulatory updates on governance and compliance." />
 <div className="flex flex-col w-full">
 {/*  Top Breadcrumb & Executive Intelligence Header  */}
-<section className="relative w-full bg-surface-container-low overflow-hidden py-space-xl">
+<AnimatedSection direction="up" delay={0.1} className="relative w-full bg-surface-container-low overflow-hidden py-space-xl">
 <div className="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
 <div className="absolute left-1/3 bottom-0 w-80 h-80 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none"></div>
 <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
@@ -57,9 +60,9 @@ function Insights() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Featured Annual Benchmark Dossier (Asymmetric Hero Card)  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 -mt-6 relative z-20 w-full mb-space-xl">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 -mt-6 relative z-20 w-full mb-space-xl">
 <div className="bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden">
 <div className="grid grid-cols-1 lg:grid-cols-12">
 {/*  Left: Imagery & Dossier Tag  */}
@@ -150,9 +153,9 @@ function Insights() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Filter & Editorial Publications Grid Section  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 w-full mb-space-xl">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 w-full mb-space-xl">
 {/*  Section Header & Filter Tabs  */}
 <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
 <div className="space-y-1">
@@ -379,9 +382,9 @@ function Insights() {
 </div>
 </article>
 </div>
-</section>
+</AnimatedSection>
 {/*  Downloadable Executive Toolkits & Practice Checklists  */}
-<section className="w-full bg-surface-container-low py-space-xl">
+<AnimatedSection direction="up" delay={0.1} className="w-full bg-surface-container-low py-space-xl">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
 <div>
@@ -463,9 +466,9 @@ function Insights() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Thought Leadership Perspective / Editorial Split Showcase  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 py-space-xl w-full">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 py-space-xl w-full">
 <div className="bg-surface-container rounded-2xl p-space-lg lg:p-space-xl flex flex-col lg:flex-row items-center gap-space-xl">
 <div className="lg:w-1/2 space-y-space-md">
 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm">
@@ -505,9 +508,9 @@ function Insights() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Quarterly Privileged Subscription Callout  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 pb-space-xl w-full">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 pb-space-xl w-full">
 <div className="relative rounded-2xl bg-inverse-surface text-inverse-on-surface overflow-hidden p-space-lg lg:p-space-xl shadow-xl">
 {/*  Glow ambient accent  */}
 <div className="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
@@ -568,7 +571,7 @@ function Insights() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Client-side Interactive Filter Script  */}
 
 </div>

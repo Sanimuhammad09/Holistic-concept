@@ -1,4 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { AnimatedSection } from '../components/AnimatedSection'
+import { SEO } from '../components/SEO'
 
 export const Route = createFileRoute('/sectors')({
   component: Sectors,
@@ -8,6 +10,7 @@ function Sectors() {
   return (
     <>
       <main className="w-full pt-20 bg-background">
+      <SEO title="Sectors We Serve | Holistic Concept Consulting" description="Providing tailored advisory services for public sector agencies, private enterprises, and non-profit organizations." />
 <div className="flex flex-col w-full">
 {/*  Subtle Ambient Glow  */}
 <div className="relative w-full overflow-hidden">
@@ -49,7 +52,7 @@ function Sectors() {
 </div>
 </div>
 {/*  Section 2 & 3: Interactive Sector Switcher & Comprehensive Vertical Dossiers  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 py-8 w-full" id="sector-explorer">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 py-8 w-full" id="sector-explorer">
 {/*  Horizontal Tab Ribbon  */}
 <div className="flex items-center gap-2 overflow-x-auto pb-4 no-scrollbar border-b border-surface-container-high" role="tablist">
 <button aria-selected="true" className="vertical-tab px-5 py-3 rounded-xl font-label-md text-label-md flex items-center gap-2 whitespace-nowrap transition-all duration-200 bg-primary text-on-primary shadow-sm" id="tab-public-sector" onClick={() => { /* switchVertical('public-sector') */ }} role="tab">
@@ -403,9 +406,9 @@ function Sectors() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Section 4: Cross-Sector Multi-Stakeholder Liaison (Pillar 8 Focus)  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full">
 <div className="p-8 lg:p-12 rounded-3xl bg-surface-container-high/60 shadow-lg relative overflow-hidden">
 {/*  Background Graphic Accents  */}
 <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -483,9 +486,9 @@ function Sectors() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Section 5: Interactive Sector Comparison / Mandate Matrix Table  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 py-12 w-full">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 py-12 w-full">
 <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
 <div>
 <span className="text-secondary font-label-sm text-label-sm uppercase tracking-wider font-semibold">Strategic Governance Matrix</span>
@@ -561,9 +564,9 @@ function Sectors() {
 </tbody>
 </table>
 </div>
-</section>
+</AnimatedSection>
 {/*  Section 6: High-Trust CTA Banner  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full">
 <div className="relative rounded-3xl bg-inverse-surface text-inverse-on-surface p-8 lg:p-14 shadow-2xl overflow-hidden">
 {/*  Decorative radial gradient glow  */}
 <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-primary-container/30 rounded-full blur-3xl pointer-events-none"></div>
@@ -605,7 +608,7 @@ function Sectors() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 </div>
 
       </main>

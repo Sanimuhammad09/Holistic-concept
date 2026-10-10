@@ -1,3 +1,5 @@
+import { AnimatedSection } from '../components/AnimatedSection'
+import { SEO } from '../components/SEO'
 import { createFileRoute } from '@tanstack/react-router'
 
 
@@ -9,9 +11,10 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
   return (
     <>
       <main className="w-full pt-20 bg-background">
+      <SEO title="HR Strategy & Training | Holistic Concept Consulting" description="Expert human resources strategy, organizational restructuring, and executive leadership training." />
 <div className="flex flex-col w-full">
 {/*  Top Hero Header Layer (Integrated under header space)  */}
-<section className="relative w-full overflow-hidden bg-surface-container-low py-space-xl lg:py-24">
+<AnimatedSection direction="up" delay={0.1} className="relative w-full overflow-hidden bg-surface-container-low py-space-xl lg:py-24">
 {/*  Ambient mesh glow circles inspired by lime and azure radial emblem  */}
 <div className="absolute -top-24 -left-20 w-96 h-96 rounded-full bg-secondary-fixed opacity-30 blur-3xl pointer-events-none"></div>
 <div className="absolute top-1/2 -right-24 w-[30rem] h-[30rem] rounded-full bg-primary-fixed-dim opacity-35 blur-3xl pointer-events-none"></div>
@@ -79,9 +82,9 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  SECTION A: Human Resources Consulting Services  */}
-<section className="w-full py-20 bg-surface">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface">
 <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
 <div className="flex flex-col gap-2 max-w-2xl">
@@ -188,9 +191,9 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  SECTION B: Business Strategy Training & Workshops  */}
-<section className="w-full py-20 bg-surface-container-low relative">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface-container-low relative">
 <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
 <div className="flex flex-col gap-2 max-w-2xl">
@@ -307,9 +310,9 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  SECTION: Interactive Curriculum & Module Catalog  */}
-<section className="w-full py-20 bg-surface" id="curriculum-catalog">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface" id="curriculum-catalog">
 <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
 <div className="flex flex-col gap-2 max-w-2xl">
 <span className="font-caption text-caption uppercase tracking-widest text-primary font-bold">Curriculum Matrix</span>
@@ -523,9 +526,9 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  SECTION: Client Impact Testimonials & Case Snapshots  */}
-<section className="w-full py-20 bg-surface-container-low">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface-container-low">
 <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
 <div className="flex flex-col gap-2 max-w-2xl">
@@ -611,9 +614,9 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  SECTION: Corporate Training Booking Form & Consultation Request CTA  */}
-<section className="w-full py-24 bg-surface relative overflow-hidden" id="booking-form">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-24 bg-surface relative overflow-hidden" id="booking-form">
 <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
 <div className="bg-surface-container-lowest rounded-3xl p-8 lg:p-14 shadow-2xl">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
@@ -733,7 +736,7 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Interactive Filtering & Form JS Logic  */}
 
 </div>

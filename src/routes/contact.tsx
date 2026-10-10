@@ -1,4 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { AnimatedSection } from '../components/AnimatedSection'
+import { SEO } from '../components/SEO'
 
 export const Route = createFileRoute('/contact')({
   component: Contact,
@@ -8,13 +10,14 @@ function Contact() {
   return (
     <>
       <main className="w-full pt-20 bg-background">
+      <SEO title="Contact Us | Holistic Concept Consulting" description="Initiate a confidential strategic consultation with Holistic Concept Consulting." />
 <div className="flex flex-col w-full">
 {/*  Subtle Ambient Glow Orbs  */}
 <div className="relative w-full overflow-hidden">
 <div className="absolute -top-32 right-1/4 w-96 h-96 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
 <div className="absolute top-96 left-10 w-80 h-80 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
 {/*  Top Breadcrumb & Executive Header Header  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-12 w-full relative z-10">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-12 w-full relative z-10">
 {/*  Breadcrumb Bar  */}
 <nav aria-label="Breadcrumb" className="flex items-center gap-space-xs font-caption text-caption text-on-surface-variant uppercase tracking-wider mb-6">
 <a className="hover:text-primary transition-colors flex items-center gap-1" data-path="home" href="#">
@@ -80,9 +83,9 @@ function Contact() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Two-Column Architecture: Intake Form & Crisis Dispatch  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 pb-20 w-full relative z-10">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 pb-20 w-full relative z-10">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 {/*  Left Column: Confidential Intake Form (7 cols)  */}
 <div className="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-6 sm:p-10 shadow-md">
@@ -395,9 +398,9 @@ function Contact() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Client Discretion & Legal Safeguards 4-Card Grid  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full relative z-10">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full relative z-10">
 <div className="flex flex-col items-center text-center mb-12">
 <span className="font-caption text-caption text-secondary font-bold uppercase tracking-wider mb-2">Institutional Confidence</span>
 <h2 className="font-headline-lg text-headline-lg text-on-surface tracking-tight">Client Discretion & Legal Safeguards</h2>
@@ -471,9 +474,9 @@ function Contact() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Visual Anchor: Senior Partner Advisory Team & Operations Center  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 py-12 w-full relative z-10">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 py-12 w-full relative z-10">
 <div className="bg-surface-container-low rounded-3xl p-8 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
 <div className="lg:col-span-7 flex flex-col gap-4">
 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm w-fit font-bold">
@@ -515,9 +518,9 @@ function Contact() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Retainer Operations FAQ Accordion  */}
-<section className="max-w-4xl mx-auto px-6 lg:px-12 py-16 w-full relative z-10">
+<AnimatedSection direction="up" delay={0.1} className="max-w-4xl mx-auto px-6 lg:px-12 py-16 w-full relative z-10">
 <div className="text-center mb-10">
 <span className="font-caption text-caption text-secondary font-bold uppercase tracking-wider">Protocol Clarity</span>
 <h2 className="font-headline-lg text-headline-lg text-on-surface tracking-tight">Consultation & Retainer FAQ</h2>
@@ -565,9 +568,9 @@ function Contact() {
           </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Bottom Persistent Call-to-Action Bar  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 pb-20 w-full relative z-10">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 pb-20 w-full relative z-10">
 <div className="p-8 sm:p-12 rounded-3xl bg-surface-container-low shadow-sm flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
 <div className="flex flex-col gap-2 max-w-xl text-center lg:text-left">
 <span className="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Direct Access Escalation</span>
@@ -587,7 +590,7 @@ function Contact() {
 </a>
 </div>
 </div>
-</section>
+</AnimatedSection>
 </div>
 </div>
 

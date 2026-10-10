@@ -1,3 +1,5 @@
+import { AnimatedSection } from '../components/AnimatedSection'
+import { SEO } from '../components/SEO'
 import { createFileRoute } from '@tanstack/react-router'
 
 
@@ -9,9 +11,10 @@ function ServicesNegotiationProcessServingHolisticConceptConsulting() {
   return (
     <>
       <main className="w-full pt-20 bg-background">
+      <SEO title="Negotiation & Process Serving | Holistic Concept Consulting" description="High-stakes contract resolution, mediation, and specialized legal process serving." />
 <div className="flex flex-col w-full">
 {/*  Immersive Editorial Top Banner / Hero  */}
-<section className="relative w-full bg-surface-container-low overflow-hidden pt-12 pb-20">
+<AnimatedSection direction="up" delay={0.1} className="relative w-full bg-surface-container-low overflow-hidden pt-12 pb-20">
 {/*  Ambient Luminous Mesh Accents inspired by radial logo  */}
 <div className="absolute -top-32 -left-20 w-96 h-96 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none"></div>
 <div className="absolute top-1/4 right-0 w-[500px] h-[500px] rounded-full bg-primary-container/15 blur-3xl pointer-events-none"></div>
@@ -80,9 +83,9 @@ function ServicesNegotiationProcessServingHolisticConceptConsulting() {
 </a>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Dual Split Visual Feature Overview  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 -mt-8 relative z-20 w-full mb-16">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 -mt-8 relative z-20 w-full mb-16">
 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 {/*  Negotiation Focal Graphic Card  */}
 <div className="relative bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden group">
@@ -107,9 +110,9 @@ function ServicesNegotiationProcessServingHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  SECTION 1: Strategic Negotiation & Dispute Mediation  */}
-<section className="w-full py-16 bg-surface" id="negotiation-practice">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-16 bg-surface" id="negotiation-practice">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 {/*  Section Header  */}
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12">
@@ -264,9 +267,9 @@ function ServicesNegotiationProcessServingHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  SECTION 2: Professional Process Server Services  */}
-<section className="w-full py-16 bg-surface-container-low" id="process-serving-unit">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-16 bg-surface-container-low" id="process-serving-unit">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 {/*  Section Title & Badge  */}
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12">
@@ -431,9 +434,9 @@ function ServicesNegotiationProcessServingHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  SECTION 3: Interactive Comparison / Service Scope Matrix  */}
-<section className="w-full py-16 bg-surface">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-16 bg-surface">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="text-center max-w-3xl mx-auto mb-12">
 <span className="font-caption text-caption text-primary uppercase font-bold tracking-widest block mb-2">Integrated Dual Operational Matrix</span>
@@ -511,9 +514,9 @@ Single point of executive contact with designated legal project manager
 
 </div>
 </div>
-</section></div>
+</AnimatedSection></div>
 {/*  SECTION 4: Why Choose HCC for Legal Support Services  */}
-<section className="w-full py-16 bg-surface-container-low">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-16 bg-surface-container-low">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 {/*  Visual & Badge Side  */}
@@ -583,9 +586,9 @@ Single point of executive contact with designated legal project manager
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  SECTION 5: Secure File Submission Portal Teaser  */}
-<section className="w-full py-16 bg-surface" id="portal-intake">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-16 bg-surface" id="portal-intake">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="rounded-2xl bg-gradient-to-br from-surface-container to-surface-container-high p-8 lg:p-12 shadow-md">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
@@ -660,9 +663,9 @@ Single point of executive contact with designated legal project manager
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  SECTION 6: Urgent Process Service Hotline & Emergency Intake Callout  */}
-<section className="w-full py-12 bg-surface-container-lowest">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-12 bg-surface-container-lowest">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="bg-gradient-to-r from-on-surface via-inverse-surface to-on-surface rounded-2xl p-8 lg:p-10 text-surface-bright shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
 <div className="flex items-center gap-6">
@@ -692,7 +695,7 @@ Single point of executive contact with designated legal project manager
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 
       </main>
     </>

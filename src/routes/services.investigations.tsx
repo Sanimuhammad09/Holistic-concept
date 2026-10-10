@@ -1,4 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { AnimatedSection } from '../components/AnimatedSection'
+import { SEO } from '../components/SEO'
 
 export const Route = createFileRoute('/services/investigations')({
   component: ServicesInvestigationsHolisticConceptConsulting,
@@ -9,9 +11,10 @@ function ServicesInvestigationsHolisticConceptConsulting() {
   return (
     <>
       <main className="w-full pt-20 bg-background">
+      <SEO title="Workplace Investigations | Holistic Concept Consulting" description="Impartial, forensic-level workplace investigations and confidential whistleblower disclosures." />
 <div className="flex flex-col w-full">
 {/*  Top Ambient Banner & Hero Section  */}
-<section className="relative w-full overflow-hidden bg-surface-container-low pt-12 pb-20">
+<AnimatedSection direction="up" delay={0.1} className="relative w-full overflow-hidden bg-surface-container-low pt-12 pb-20">
 <div className="absolute -top-32 -left-20 w-96 h-96 rounded-full bg-secondary-container/30 blur-3xl pointer-events-none"></div>
 <div className="absolute top-10 right-0 w-[500px] h-[500px] rounded-full bg-primary-fixed/40 blur-3xl pointer-events-none"></div>
 <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
@@ -86,9 +89,9 @@ function ServicesInvestigationsHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Overview of Investigative Practice  */}
-<section className="w-full py-20 bg-surface">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 <div className="lg:col-span-4">
@@ -131,9 +134,9 @@ function ServicesInvestigationsHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Specific Investigation Types  */}
-<section className="w-full py-20 bg-surface-container-low">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface-container-low">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
 <div className="max-w-2xl">
@@ -262,9 +265,9 @@ function ServicesInvestigationsHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  The HCC 5-Stage Investigative Process  */}
-<section className="w-full py-20 bg-surface" id="methodology">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface" id="methodology">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="max-w-3xl mb-16">
 <span className="font-caption text-caption uppercase tracking-wider text-secondary font-bold">Investigation Lifecycle</span>
@@ -383,9 +386,9 @@ function ServicesInvestigationsHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Strict Confidentiality & Evidence Standards Guarantee  */}
-<section className="w-full py-20 bg-inverse-surface text-inverse-on-surface relative overflow-hidden">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-inverse-surface text-inverse-on-surface relative overflow-hidden">
 <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 <div className="lg:col-span-6 flex flex-col gap-6">
@@ -453,9 +456,9 @@ function ServicesInvestigationsHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Representative Case Studies (Anonymized)  */}
-<section className="w-full py-20 bg-surface">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
 <div>
@@ -546,9 +549,9 @@ function ServicesInvestigationsHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Confidential Investigator Intake Box  */}
-<section className="w-full py-20 bg-surface-container-high" id="intake-portal">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface-container-high" id="intake-portal">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="bg-surface-container-lowest rounded-3xl p-8 lg:p-14 shadow-xl">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -668,9 +671,9 @@ function ServicesInvestigationsHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Investigative FAQ Accordion Section  */}
-<section className="w-full py-16 bg-surface">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-16 bg-surface">
 <div className="max-w-4xl mx-auto px-6 lg:px-12">
 <div className="text-center mb-10">
 <span className="font-caption text-caption uppercase tracking-wider text-secondary font-bold">Frequently Addressed</span>
@@ -706,7 +709,7 @@ function ServicesInvestigationsHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 </div>
       </main>
     </>

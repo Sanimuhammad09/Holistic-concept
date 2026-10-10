@@ -1,3 +1,5 @@
+import { AnimatedSection } from '../components/AnimatedSection'
+import { SEO } from '../components/SEO'
 import { createFileRoute } from '@tanstack/react-router'
 
 
@@ -9,13 +11,14 @@ function AboutUsHolisticConceptConsulting() {
   return (
     <>
       <main className="w-full pt-20 bg-background">
+      <SEO title="About Us | Holistic Concept Consulting" description="Meet our team of experts dedicated to ethical governance, investigative rigor, and strategic advisory." />
 <div className="flex flex-col w-full">
 {/*  Subtle Ambient Glow Orbs  */}
 <div className="relative w-full overflow-hidden">
 <div className="absolute top-12 left-1/4 w-96 h-96 rounded-full bg-secondary-fixed/15 blur-3xl pointer-events-none -z-10"></div>
 <div className="absolute top-48 right-1/4 w-[32rem] h-[32rem] rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none -z-10"></div>
 {/*  Section 1: Hero Editorial Header & Breadcrumb  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-16">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-16">
 <div className="flex flex-col gap-space-lg">
 {/*  Breadcrumb & Badge Bar  */}
 <div className="flex flex-wrap items-center justify-between gap-4">
@@ -98,9 +101,9 @@ function AboutUsHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Section 2: The HCC Story & Founding Philosophy  */}
-<section className="w-full bg-surface-container-low py-20">
+<AnimatedSection direction="up" delay={0.1} className="w-full bg-surface-container-low py-20">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 <div className="lg:col-span-5 flex flex-col gap-6">
@@ -186,9 +189,9 @@ function AboutUsHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Section 3: Official Vision & Mission (Asymmetric Executive Cards)  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 py-24" id="vision-mission">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 py-24" id="vision-mission">
 <div className="flex flex-col gap-12">
 <div className="flex flex-col items-center text-center max-w-2xl mx-auto gap-3">
 <span className="font-label-md text-label-md text-secondary font-bold uppercase tracking-wider">Mandate & Institutional Purpose</span>
@@ -248,9 +251,9 @@ function AboutUsHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Section 4: Guiding Core Values (Four Gradient Rim Cards)  */}
-<section className="w-full bg-surface-container-low py-20">
+<AnimatedSection direction="up" delay={0.1} className="w-full bg-surface-container-low py-20">
 <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-12">
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
 <div className="flex flex-col gap-2 max-w-xl">
@@ -332,9 +335,9 @@ function AboutUsHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Section 5: Senior Leadership & Advisory Council Grid  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 py-24" id="leadership">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 py-24" id="leadership">
 <div className="flex flex-col gap-14">
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
 <div className="flex flex-col gap-3 max-w-2xl">
@@ -434,9 +437,9 @@ function AboutUsHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Section 6: Accreditations, Industry Affiliations & Ethical Code of Practice  */}
-<section className="w-full bg-surface-container-low py-16">
+<AnimatedSection direction="up" delay={0.1} className="w-full bg-surface-container-low py-16">
 <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-10">
 <div className="flex flex-col items-center text-center gap-2 max-w-xl mx-auto">
 <span className="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Institutional Validation</span>
@@ -491,9 +494,9 @@ function AboutUsHolisticConceptConsulting() {
           </a>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Section 7: Interactive Timeline of Milestones & Client Engagements  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 py-24">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 py-24">
 <div className="flex flex-col gap-14">
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
 <div className="flex flex-col gap-3 max-w-xl">
@@ -575,9 +578,9 @@ function AboutUsHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-</section>
+</AnimatedSection>
 {/*  Section 8: Consultation Invitation Banner (Dual Gradient CTA Card)  */}
-<section className="max-w-7xl mx-auto px-6 lg:px-12 pb-20">
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 pb-20">
 <div className="relative rounded-2xl bg-gradient-to-r from-primary to-primary-container p-10 md:p-14 overflow-hidden shadow-2xl text-on-primary flex flex-col lg:flex-row items-center justify-between gap-10">
 {/*  Background Soft Shapes  */}
 <div className="absolute -left-20 -top-20 w-80 h-80 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
@@ -604,7 +607,7 @@ function AboutUsHolisticConceptConsulting() {
           </a>
 </div>
 </div>
-</section>
+</AnimatedSection>
 </div>
 </div>
       </main>
