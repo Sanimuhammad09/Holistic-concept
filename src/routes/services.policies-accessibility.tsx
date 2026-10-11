@@ -11,7 +11,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
   return (
     <>
       <main className="w-full pt-20 bg-background">
-      <SEO title="Policies & Accessibility | Holistic Concept Consulting" description="Comprehensive regulatory compliance, AODA/ADA accessibility plans, and corporate policy architecture." />
+      <SEO title="Policies & Accessibility | Holistic Concept Consulting" description="Comprehensive regulatory compliance, workplace accessibility plans, and corporate policy architecture." />
 <div className="flex flex-col w-full">
 {/*  Top Ambient Luminous Glow Background Container  */}
 <AnimatedSection direction="up" delay={0.1} className="relative w-full overflow-hidden bg-surface-container-lowest">
@@ -24,7 +24,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 <div className="lg:col-span-7 flex flex-col gap-6">
 <div className="inline-flex items-center gap-2 self-start px-3.5 py-1.5 rounded-full bg-surface-container text-primary font-caption text-caption uppercase tracking-wider shadow-sm">
 <span className="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-pulse"></span>
-            Statutory Governance & AODA / ACA / ADA Standards
+            Regulatory Compliance & Accessibility Standards
           </div>
 <h1 className="font-display-hero text-display-hero text-on-surface tracking-tight leading-tight">
             Institutional Policy Architecture & Comprehensive Accessibility Planning
@@ -71,7 +71,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 </div>
 <div>
 <span className="block font-title-md text-title-md text-on-surface leading-tight">Statutory Alignment</span>
-<span className="block font-caption text-caption text-on-surface-variant">OHSA, AODA, ADA, Bill C-65 & PIPEDA</span>
+<span className="block font-caption text-caption text-on-surface-variant">OHSA, Employment Equity, Bill C-65 & Statutory Compliance</span>
 </div>
 </div>
 <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed text-caption font-bold">ACTIVE</span>
@@ -232,7 +232,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 </div>
 </div>
 </AnimatedSection>
-{/*  Pillar 2: Accessibility Plan Development (Biophilic Modernism / AODA, ACA, ADA Focus)  */}
+{/*  Pillar 2: Accessibility Plan Development (Corporate Governance & Accessibility Standards)  */}
 <AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface-container-low relative overflow-hidden">
 {/*  Ambient mesh gradient  */}
 <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none"></div>
@@ -247,7 +247,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
             Comprehensive Accessibility Plan (MYAP) Architecture
           </h2>
 <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-            Accessibility is both an urgent human imperative and an unforgiving statutory obligation. We steer organizations away from passive compliance into proactive barrier identification, formulating multi-year blueprints governed by the Accessibility for Ontarians with Disabilities Act (AODA), Accessible Canada Act (ACA), and Americans with Disabilities Act (ADA).
+            Accessibility is both an urgent human imperative and an unforgiving statutory obligation. We steer organizations away from passive compliance into proactive barrier identification, formulating multi-year blueprints governed by recognized jurisdictional accessibility frameworks, human rights codes, and corporate statutory compliance mandates.
           </p>
 </div>
 <div className="lg:col-span-4 flex flex-col p-6 rounded-2xl bg-surface-container-lowest shadow-md">
@@ -501,7 +501,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 <td className="py-5 px-6 font-semibold text-on-surface">
 <div className="flex items-center gap-2">
 <span className="material-symbols-outlined text-secondary text-[20px]">accessibility</span>
-                    Accessibility Multi-Year Plans (AODA / ADA)
+                    Accessibility Multi-Year Plans & Frameworks
                   </div>
 </td>
 <td className="py-5 px-6 bg-error-container/10">
@@ -586,7 +586,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 <ul className="space-y-3 font-body-sm text-body-sm text-on-surface mb-8">
 <li className="flex items-center gap-3">
 <span className="w-5 h-5 rounded-full bg-secondary-container text-on-secondary-fixed-variant flex items-center justify-center text-[12px] font-bold">✓</span>
-                AODA / ACA IASR Multi-Year Milestone Schedule
+                Statutory Accessibility Multi-Year Milestone Schedule
               </li>
 <li className="flex items-center gap-3">
 <span className="w-5 h-5 rounded-full bg-secondary-container text-on-secondary-fixed-variant flex items-center justify-center text-[12px] font-bold">✓</span>
@@ -657,7 +657,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 <label className="block font-label-sm text-label-sm text-on-surface mb-1.5">Primary Advisory Objective</label>
 <select className="w-full h-12 px-4 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary transition-all">
 <option>Comprehensive Manual & Handbook Rewrite</option>
-<option>Mandatory AODA / ACA Multi-Year Accessibility Plan</option>
+<option>Mandatory Multi-Year Accessibility Plan</option>
 <option>Built Environment / Physical Accessibility Audit</option>
 <option>Digital WCAG 2.1 AA/AAA Technical Remediation</option>
 <option>Urgent Post-Incident Policy Overhaul</option>

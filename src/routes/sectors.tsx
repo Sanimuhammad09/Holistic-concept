@@ -248,7 +248,7 @@ function Sectors() {
 <span className="font-label-sm text-label-sm text-on-surface-variant">Statutory Mandates:</span>
 <span className="px-3 py-1 rounded-full bg-surface-container font-caption text-caption text-on-surface font-semibold">Post-secondary Education Statutes</span>
 <span className="px-3 py-1 rounded-full bg-surface-container font-caption text-caption text-on-surface font-semibold">Human Rights Code</span>
-<span className="px-3 py-1 rounded-full bg-surface-container font-caption text-caption text-on-surface font-semibold">AODA / Accessibility Laws</span>
+<span className="px-3 py-1 rounded-full bg-surface-container font-caption text-caption text-on-surface font-semibold">Workplace Accessibility Standards</span>
 </div>
 </div>
 <div className="lg:col-span-5 flex flex-col gap-6">

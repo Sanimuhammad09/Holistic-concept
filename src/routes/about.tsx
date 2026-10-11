@@ -147,7 +147,7 @@ function AboutUsHolisticConceptConsulting() {
 </div>
 <div>
 <h3 className="font-title-md text-title-md text-on-surface mb-1">1. Statutory Rigor</h3>
-<p className="font-caption text-caption text-on-surface-variant">Exhaustive forensic reviews, workplace safety codes, AODA/ADA compliance, and statutory alignment.</p>
+<p className="font-caption text-caption text-on-surface-variant">Exhaustive forensic reviews, workplace safety codes, statutory accessibility compliance, and regulatory alignment.</p>
 </div>
 <div className="w-full bg-surface-container h-1 rounded-full overflow-hidden">
 <div className="bg-primary h-full w-full"></div>
@@ -464,7 +464,7 @@ function AboutUsHolisticConceptConsulting() {
 </div>
 <div className="bg-surface-container-lowest p-5 rounded-xl flex flex-col items-center text-center gap-3 shadow-sm hover:shadow-md transition-shadow">
 <span className="material-symbols-outlined text-secondary text-[32px]">accessible_forward</span>
-<span className="font-label-sm text-label-sm font-bold text-on-surface">AODA / ADA</span>
+<span className="font-label-sm text-label-sm font-bold text-on-surface">Universal Design</span>
 <span className="font-caption text-caption text-on-surface-variant">Universal Design Certified</span>
 </div>
 <div className="bg-surface-container-lowest p-5 rounded-xl flex flex-col items-center text-center gap-3 shadow-sm hover:shadow-md transition-shadow">
@@ -538,7 +538,7 @@ function AboutUsHolisticConceptConsulting() {
 </div>
 <div>
 <h3 className="font-title-md text-title-md text-on-surface font-bold mb-2">Accessibility & Equity Unit</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant">Launched integrated accessibility audit wing, advising national crown corporations on statutory AODA and human rights compliances.</p>
+<p className="font-body-sm text-body-sm text-on-surface-variant">Launched integrated accessibility audit wing, advising national crown corporations on statutory accessibility and human rights compliance.</p>
 </div>
 <div className="pt-4 border-t border-surface-container font-caption text-caption text-on-surface-variant">
               Expanded to 12 Public Bodies

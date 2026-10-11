@@ -117,7 +117,7 @@ function IndexComponent() {
                 <div className="max-w-3xl flex flex-col gap-6">
                   <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-container-highest/20 backdrop-blur-md w-fit">
                     <span className="w-2 h-2 rounded-full bg-secondary-fixed"></span>
-                    <span className="font-label-sm text-label-sm tracking-wide text-secondary-fixed uppercase">AODA / ADA & Statutory Compliance</span>
+                    <span className="font-label-sm text-label-sm tracking-wide text-secondary-fixed uppercase">Regulatory Compliance & Accessibility</span>
                   </div>
                   <h2 className="font-headline-xl text-headline-xl lg:text-[48px] lg:leading-[56px] text-on-primary font-bold tracking-tight">
                     {currentSlide === 2 ? <TypewriterText text="Policy Architecture & Accessibility Frameworks" speed={40} /> : "Policy Architecture & Accessibility Frameworks"}
@@ -287,7 +287,7 @@ function IndexComponent() {
                 { icon: 'policy', title: 'Investigations', desc: 'Impartial workplace misconduct reviews, forensic audits, harassment probes, and confidential whistleblower disclosures.', link: '/services/investigations', tag: 'Evidentiary Rigor', bg: 'bg-primary-fixed text-primary' },
                 { icon: 'handshake', title: 'Negotiation & Mediation', desc: 'High-stakes contract resolution, executive severance facilitation, collective bargaining dialogue, and cross-party consensus.', link: '/services/negotiation-process-serving', tag: 'Consensus Built', bg: 'bg-secondary-fixed text-on-secondary-fixed-variant' },
                 { icon: 'edit_document', title: 'Draft & Review Policies', desc: 'Comprehensive statutory compliance updates, employee handbooks, workplace harassment guidelines, and regulatory alignment.', link: '/services/policies-accessibility', tag: 'Statutory Compliance', bg: 'bg-surface-container-high text-primary' },
-                { icon: 'accessibility_new', title: 'Accessibility Plans', desc: 'Comprehensive AODA, ADA, and multi-year statutory accessibility plans for digital spaces, facilities, and organizational policy.', link: '/services/policies-accessibility', tag: 'AODA / ADA Standards', bg: 'bg-secondary-container text-on-secondary-container' },
+                { icon: 'accessibility_new', title: 'Accessibility Plans', desc: 'Comprehensive multi-year statutory accessibility plans for digital spaces, facilities, and organizational policy.', link: '/services/policies-accessibility', tag: 'Accessibility Standards', bg: 'bg-secondary-container text-on-secondary-container' },
                 { icon: 'mark_email_read', title: 'Specialized Process Serving', desc: 'Prompt, legally watertight delivery of subpoenas, formal tribunal notices, and sensitive summonses with verifiable affidavits.', link: '/services/negotiation-process-serving', tag: 'Judicial Verification', bg: 'bg-surface-container-high text-primary' },
                 { icon: 'groups_3', title: 'Human Resources Strategy', desc: 'Navigating employee friction, organizational restructures, high-risk terminations, and psychological health initiatives.', link: '/services/hr-strategy-training', tag: 'Culture & Risk', bg: 'bg-primary-fixed-dim text-primary-container' },
                 { icon: 'school', title: 'Business Strategy Training', desc: 'Boardroom seminars, ethics coaching, middle-management conflict de-escalation labs, and operational drill modules.', link: '/services/hr-strategy-training', tag: 'Executive Workshops', bg: 'bg-secondary-fixed text-secondary' },
@@ -444,7 +444,7 @@ function IndexComponent() {
                         <option>Workplace Investigation & Audit</option>
                         <option>Strategic Negotiation & Mediation</option>
                         <option>Policy Drafting & Review</option>
-                        <option>Accessibility Standards (AODA/ADA)</option>
+                        <option>Accessibility & Compliance Standards</option>
                         <option>Specialized Process Serving</option>
                         <option>Human Resources & People Risk</option>
                         <option>Executive Leadership Training</option>

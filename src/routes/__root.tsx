@@ -49,7 +49,7 @@ function RootComponent() {
                   <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/investigations">Investigations & Forensic Review</Link>
                   <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/negotiation-process-serving">Strategic Negotiation</Link>
                   <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/policies-accessibility">Policies & Regulatory Compliance</Link>
-                  <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/policies-accessibility">Accessibility Standards (AODA/ADA)</Link>
+                  <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/policies-accessibility">Accessibility & Compliance Standards</Link>
                   <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/negotiation-process-serving">Specialized Process Serving</Link>
                   <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/hr-strategy-training">Strategic HR & People Risk</Link>
                   <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/hr-strategy-training">Executive & Governance Training</Link>
@@ -87,7 +87,7 @@ function RootComponent() {
                   <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/investigations">Investigations & Forensic Review</Link>
                   <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/negotiation-process-serving">Strategic Negotiation</Link>
                   <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/policies-accessibility">Policies & Regulatory Compliance</Link>
-                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/policies-accessibility">Accessibility Standards (AODA/ADA)</Link>
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/policies-accessibility">Accessibility & Compliance Standards</Link>
                   <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/negotiation-process-serving">Specialized Process Serving</Link>
                   <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/hr-strategy-training">Strategic HR & People Risk</Link>
                   <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/hr-strategy-training">Executive & Governance Training</Link>
@@ -131,7 +131,7 @@ function RootComponent() {
                 <Link className="hover:text-white transition-colors" to="/services/investigations">Investigations & Audit</Link>
                 <Link className="hover:text-white transition-colors" to="/services/negotiation-process-serving">Strategic Negotiation</Link>
                 <Link className="hover:text-white transition-colors" to="/services/policies-accessibility">Policy Architecture</Link>
-                <Link className="hover:text-white transition-colors" to="/services/policies-accessibility">Accessibility (AODA/ADA)</Link>
+                <Link className="hover:text-white transition-colors" to="/services/policies-accessibility">Accessibility & Compliance Standards</Link>
                 <Link className="hover:text-white transition-colors" to="/services/negotiation-process-serving">Process Serving Unit</Link>
                 <Link className="hover:text-white transition-colors" to="/services/hr-strategy-training">HR & People Risk</Link>
               </div>

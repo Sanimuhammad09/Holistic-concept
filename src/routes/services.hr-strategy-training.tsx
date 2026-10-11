@@ -270,7 +270,7 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 </div>
 <h3 className="font-title-md text-title-md text-on-surface font-bold">Diversity, Equity & Accessibility in Action Workshops</h3>
 <p className="font-body-sm text-body-sm text-on-surface-variant">
-              Moving beyond performative pledges to operationalized neurodiversity frameworks, universal physical accessibility compliance (AODA/ADA), and unbiased hiring rubrics.
+              Moving beyond performative pledges to operationalized neurodiversity frameworks, universal physical accessibility compliance, and unbiased hiring rubrics.
             </p>
 </div>
 <div className="pt-6 flex items-center justify-between font-caption text-caption text-on-surface-variant">
@@ -502,7 +502,7 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 <span className="material-symbols-outlined text-[16px]">schedule</span> 4 Hours
                 </span>
 </div>
-<h3 className="font-title-md text-title-md text-on-surface font-bold">Inclusive Workplace Dynamics & Accessibility (AODA)</h3>
+<h3 className="font-title-md text-title-md text-on-surface font-bold">Inclusive Workplace Dynamics & Accessibility Standards</h3>
 <p className="font-body-sm text-body-sm text-on-surface-variant">
                 Practical accommodation protocols, building accessible communication practices, and fostering neuroinclusive teamwork environments.
               </p>
@@ -689,7 +689,7 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 <option value="interim-leadership">Fractional / Interim Senior HR Leadership</option>
 <option value="exec-training">Executive Governance & Ethics Workshop</option>
 <option value="conflict-mediation">Conflict Management & De-escalation Training</option>
-<option value="harassment-aoda">Anti-Harassment & Accessibility (AODA/ADA)</option>
+<option value="harassment-accessibility">Anti-Harassment & Accessibility Standards</option>
 <option value="strategic-alignment">Board Strategic Planning Retreat</option>
 </select>
 </div>

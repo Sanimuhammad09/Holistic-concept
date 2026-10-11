@@ -171,7 +171,7 @@ function Insights() {
           Defensible Investigations
         </button>
 <button className="px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all filter-btn" data-category="policy">
-          Statutory Policy & AODA
+          Statutory Policy & Accessibility
         </button>
 <button className="px-4 py-2 rounded-full font-label-sm text-label-sm bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all filter-btn" data-category="dispute">
           Mediation & Labor
@@ -227,7 +227,7 @@ function Insights() {
 <span className="font-caption text-caption text-on-surface-variant">12 Min Read</span>
 </div>
 <h3 className="font-title-md text-title-md text-on-surface leading-snug hover:text-primary transition-colors cursor-pointer">
-            Navigating the AODA/ACA Horizon: Converting Compliance Mandates into Institutional Asset
+            Navigating Modern Accessibility Mandates: Converting Compliance into an Institutional Asset
           </h3>
 <p className="font-body-sm text-body-sm text-on-surface-variant">
             How forward-looking organizations are transforming mandatory statutory accessibility deadlines into defensible human-capital resilience and procurement advantages.
@@ -405,7 +405,7 @@ function Insights() {
 <span className="material-symbols-outlined text-[24px]">fact_check</span>
 </div>
 <span className="font-caption text-caption text-on-surface-variant uppercase font-semibold">Self-Assessment Instrument</span>
-<h3 className="font-headline-sm text-headline-sm text-on-surface">32-Point Institutional Policy & AODA Audit Checklist</h3>
+<h3 className="font-headline-sm text-headline-sm text-on-surface">32-Point Institutional Policy & Accessibility Audit Checklist</h3>
 <p className="font-body-sm text-body-sm text-on-surface-variant">
               A structured operational audit protocol covering physical facility accommodations, digital accessibility standards, and statutory policy renewal cycles.
             </p>
