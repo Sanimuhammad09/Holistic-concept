@@ -1,6 +1,6 @@
 import { AnimatedSection } from '../components/AnimatedSection'
 import { SEO } from '../components/SEO'
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, Link } from '@tanstack/react-router'
 
 
 export const Route = createFileRoute('/about')({
@@ -336,103 +336,163 @@ function AboutUsHolisticConceptConsulting() {
 </div>
 </div>
 </AnimatedSection>
-{/*  Section 5: Senior Leadership & Advisory Council Grid  */}
-<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 py-24" id="leadership">
-<div className="flex flex-col gap-14">
-<div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-<div className="flex flex-col gap-3 max-w-2xl">
-<span className="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">Executive Stewardship</span>
-<h2 className="font-headline-xl text-headline-xl text-on-surface font-semibold">Senior Leadership & Advisory Council</h2>
-<p className="font-body-md text-body-md text-on-surface-variant">Led by seasoned barristers, organizational governance architects, and credentialed dispute resolution neutrals.</p>
+{/*  Section 5: Overview of HCC Founder  */}
+<AnimatedSection direction="up" delay={0.1} className="max-w-7xl mx-auto px-6 lg:px-12 py-24" id="founder">
+<div className="flex flex-col gap-12">
+<div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-surface-container pb-6">
+<div className="flex flex-col gap-2 max-w-2xl">
+<span className="font-label-md text-label-md text-primary font-bold uppercase tracking-wider flex items-center gap-2">
+<span className="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+Executive Leadership & Visionary Stewardship
+</span>
+<h2 className="font-headline-xl text-headline-xl text-on-surface font-semibold tracking-tight">Overview of HCC Founder</h2>
+<p className="font-body-md text-body-md text-on-surface-variant">The strategic vision, legal excellence, and licensed investigative rigor behind Holistic Concept Consulting.</p>
+</div>
+<div className="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shrink-0">
+<span className="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Alberta Justice Licensed & Board Neutral</span>
+</div>
+</div>
+
+{/*  Founder Feature Showcase Container  */}
+<div className="bg-surface-container-lowest rounded-3xl p-6 sm:p-10 lg:p-12 shadow-lg border border-surface-container flex flex-col lg:flex-row gap-10 lg:gap-14 items-center lg:items-stretch">
+{/*  Left: Portrait & Fast Credentials  */}
+<div className="w-full sm:w-80 lg:w-96 shrink-0 flex flex-col gap-5">
+<div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[3/4] bg-surface-container group">
+<img 
+src="/founder.jpg" 
+alt="Nosa Ebhomielen, Founder of Holistic Concept Consulting" 
+className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" 
+/>
+<div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+<div className="absolute bottom-4 left-4 right-4 flex flex-col gap-1 text-white">
+<span className="px-3 py-1 rounded-full bg-primary/90 backdrop-blur-md font-label-sm text-label-sm font-semibold w-fit flex items-center gap-1.5 shadow-sm">
+<span className="material-symbols-outlined text-[16px] text-secondary-fixed">verified</span>
+Founder & Principal Consultant
+</span>
+<span className="font-caption text-caption text-slate-200">Holistic Concept Consulting</span>
+</div>
+</div>
+
+{/* Quick Highlights Under Portrait */}
+<div className="bg-surface-container-low rounded-2xl p-4 flex flex-col gap-3 font-body-sm text-body-sm">
+<div className="flex items-center gap-3">
+<div className="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span className="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div className="flex flex-col">
+<span className="font-label-sm text-label-sm text-on-surface font-bold">Licensed Investigator</span>
+<span className="font-caption text-caption text-on-surface-variant">SSIA • Alberta Justice & Solicitor General</span>
+</div>
 </div>
 <div className="flex items-center gap-3">
-<span className="font-label-sm text-label-sm text-on-surface-variant">Practicing Neutrality Mandate</span>
-<span className="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+<div className="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-fixed-variant flex items-center justify-center shrink-0">
+<span className="material-symbols-outlined text-[18px]">school</span>
+</div>
+<div className="flex flex-col">
+<span className="font-label-sm text-label-sm text-on-surface font-bold">MBA with Distinction</span>
+<span className="font-caption text-caption text-on-surface-variant">Univ. of Gloucestershire, United Kingdom</span>
 </div>
 </div>
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-{/*  Profile 1  */}
-<div className="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
-<div className="relative h-72 w-full overflow-hidden bg-surface-container">
-<img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Distinguished professional woman in tailored executive navy attire standing in modern glass architectural office with confident, thoughtful expression, soft natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqLYnEqSbPs8VDRUGjL5dQO_iVgL62p5SJu_u7pU87pxXy9D3bsAGFlBvsC3fyWtvEpJKKvWaVjIqNbtsmN7fe-PwWEIPBd58EcmTbexSanZvjSqsyT61gwIrT0pm0pFGtRWnnKlcn2sW8VbpEVE3LRMBpYqpd1m_9egCxDiX86UZt6M9aJ4ozeGopgF1qkuBSo1-Nur2KJGMdIoY1nD0_rcQRlYk3yXjuXel4BP568qOEORPShIXluQ"/>
-<div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-inverse-surface/85 backdrop-blur-md text-white font-caption text-caption flex items-center gap-1.5">
-<span className="material-symbols-outlined text-[14px] text-secondary-fixed">shield</span>
-<span>Managing Partner</span>
+<div className="flex items-center gap-3">
+<div className="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span className="material-symbols-outlined text-[18px]">location_on</span>
 </div>
-</div>
-<div className="p-6 flex flex-col flex-1 justify-between gap-4">
-<div>
-<h3 className="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Evelyn Vance, LL.M.</h3>
-<span className="font-label-sm text-label-sm text-primary font-semibold block mb-2">Lead Investigator & Former Senior Legal Counsel</span>
-<p className="font-body-sm text-body-sm text-on-surface-variant">Over 18 years adjudicating complex corporate harassment, executive whistleblower claims, and forensic compliance breaches.</p>
-</div>
-<div className="flex items-center justify-between pt-4 border-t border-surface-container">
-<span className="font-caption text-caption text-on-surface-variant">Bar Admission • 2006</span>
-<a className="text-primary hover:text-primary-container transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">contact_mail</span></a>
+<div className="flex flex-col">
+<span className="font-label-sm text-label-sm text-on-surface font-bold">Current Residence</span>
+<span className="font-caption text-caption text-on-surface-variant">Lethbridge, Alberta, Canada</span>
 </div>
 </div>
 </div>
-{/*  Profile 2  */}
-<div className="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
-<div className="relative h-72 w-full overflow-hidden bg-surface-container">
-<img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Senior male executive consultant with glasses and charcoal blazer examining architectural blueprints in an airy contemporary conference room, thoughtful warm demeanor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZSKI9s542LUK8lHDVyRsQ2Vhw8yH4TVndGgLJZI3AilCR6yRXal9yE4PjahBpaK3YjLmukNw5jNwZKgZ9VLONKIx0adcRkMe-ZlISygzaGejpd7apXdXfHCYMxP1BrSkw-mC0hUastAsfrU0vRxPXdyVKva-rA-FuWw5_1xS6foou313rnCHTUmIpA2_1UPGCA6p1aweaJSuim8tt6jR_mVMQ2SPDygtr2Ebo-Gu2h76iEiiGA2sa2w"/>
-<div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-inverse-surface/85 backdrop-blur-md text-white font-caption text-caption flex items-center gap-1.5">
-<span className="material-symbols-outlined text-[14px] text-primary-fixed">menu_book</span>
-<span>Policy Architect</span>
+</div>
+
+{/*  Right: Detailed Bio Narrative & Structured Pillars  */}
+<div className="flex-1 flex flex-col justify-between gap-8">
+<div className="flex flex-col gap-6">
+<div className="flex flex-col gap-2">
+<div className="flex flex-wrap items-center gap-2">
+<span className="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold">
+15+ Years Industry Experience
+</span>
+<span className="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+Alberta Justice & Solicitor General Licensed
+</span>
+</div>
+<h3 className="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mt-1">
+Nosa Ebhomielen
+</h3>
+<p className="font-title-md text-title-md text-primary font-semibold">
+Multifaceted Business & Legal Specialist • Lawyer • Licensed Investigator
+</p>
+</div>
+
+{/* Core Biography - Highlighted Presentation */}
+<div className="relative pl-6 border-l-4 border-primary py-1">
+<p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
+<strong>Nosa Ebhomielen</strong> is a multifaceted business and legal specialist with over 15 years of experience. She has a Master of Business Administration (MBA) with distinction from the University of Gloucestershire in the United Kingdom and formidable legal expertise as a lawyer.
+</p>
+<p className="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-4">
+She is a licensed investigator under the Security Services and Investigators Act by Alberta Justice and the Solicitor General. She is a board member for several non-profit organizations in the city of Lethbridge. She has lived in Nigeria and the United Kingdom and is currently residing in Lethbridge, Alberta.
+</p>
+</div>
+
+{/* Key Executive Competencies / 4-Grid Breakdown */}
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+<div className="p-4 rounded-2xl bg-surface-container-low border border-outline-variant/30 flex flex-col gap-2 hover:bg-surface-container transition-colors">
+<div className="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center">
+<span className="material-symbols-outlined text-[20px]">gavel</span>
+</div>
+<span className="font-label-md text-label-md font-bold text-on-surface">Legal Acumen & Practice</span>
+<p className="font-body-sm text-body-sm text-on-surface-variant">
+Formidable legal expertise as a lawyer, guiding policy drafting, statutory compliance, and rigorous evidence gathering.
+</p>
+</div>
+
+<div className="p-4 rounded-2xl bg-surface-container-low border border-outline-variant/30 flex flex-col gap-2 hover:bg-surface-container transition-colors">
+<div className="w-10 h-10 rounded-xl bg-secondary text-on-secondary flex items-center justify-center">
+<span className="material-symbols-outlined text-[20px]">shield_person</span>
+</div>
+<span className="font-label-md text-label-md font-bold text-on-surface">Licensed Investigation</span>
+<p className="font-body-sm text-body-sm text-on-surface-variant">
+Officially credentialed under the Security Services and Investigators Act by Alberta Justice and the Solicitor General.
+</p>
+</div>
+
+<div className="p-4 rounded-2xl bg-surface-container-low border border-outline-variant/30 flex flex-col gap-2 hover:bg-surface-container transition-colors">
+<div className="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span className="material-symbols-outlined text-[20px]">workspace_premium</span>
+</div>
+<span className="font-label-md text-label-md font-bold text-on-surface">Business & Strategy Master</span>
+<p className="font-body-sm text-body-sm text-on-surface-variant">
+Master of Business Administration (MBA) earned with distinction from the University of Gloucestershire, United Kingdom.
+</p>
+</div>
+
+<div className="p-4 rounded-2xl bg-surface-container-low border border-outline-variant/30 flex flex-col gap-2 hover:bg-surface-container transition-colors">
+<div className="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-fixed-variant flex items-center justify-center">
+<span className="material-symbols-outlined text-[20px]">diversity_3</span>
+</div>
+<span className="font-label-md text-label-md font-bold text-on-surface">Governance & Community</span>
+<p className="font-body-sm text-body-sm text-on-surface-variant">
+Active board member for multiple non-profit organizations in Lethbridge, bringing international perspective from Nigeria, the UK, and Canada.
+</p>
 </div>
 </div>
-<div className="p-6 flex flex-col flex-1 justify-between gap-4">
-<div>
-<h3 className="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Dr. Marcus Chen</h3>
-<span className="font-label-sm text-label-sm text-primary font-semibold block mb-2">Principal Consultant – Policy Architecture & Governance</span>
-<p className="font-body-sm text-body-sm text-on-surface-variant">Former regulatory commissioner specializing in public sector administrative fairness, whistleblowing charters, and statutory bylaws.</p>
 </div>
-<div className="flex items-center justify-between pt-4 border-t border-surface-container">
-<span className="font-caption text-caption text-on-surface-variant">Ph.D. Public Policy</span>
-<a className="text-primary hover:text-primary-container transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">contact_mail</span></a>
+
+{/* Bottom CTA bar */}
+<div className="pt-6 border-t border-surface-container flex flex-wrap items-center justify-between gap-4">
+<div className="flex items-center gap-3 text-on-surface-variant font-body-sm text-body-sm">
+<span className="material-symbols-outlined text-[20px] text-primary">mail</span>
+<span>Direct Advisory Inquiries:</span>
+<a href="mailto:info@holisticconceptconsulting.com" className="font-semibold text-primary hover:underline">
+info@holisticconceptconsulting.com
+</a>
 </div>
-</div>
-</div>
-{/*  Profile 3  */}
-<div className="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
-<div className="relative h-72 w-full overflow-hidden bg-surface-container">
-<img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dynamic woman professional with warm confident smile and professional emerald jacket in sun-filled boardroom setting with glass partition in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEoqgMvggvMVKfrCh2FzGjDKBYGkrpu65aGVUpd-bT64gWXjzWhaJ9kvxEQxrDvi3nCSpVOQP_0FrNLcQ4poeJ5OG7qmgfA7oUUsbNuFVzaYZwImDcmNa0-kgN1OWgfxtIjvnWlB2b-947rGLnNYVcsI2m8-9uxEkCESFlqt7tTpHzY4h8STeVxzjF2gxKlxrcBwJSz_xan_lEQwhts4qdwq6DyePWCJQOo0OoNMSJnti3QtYer0v_DA"/>
-<div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-inverse-surface/85 backdrop-blur-md text-white font-caption text-caption flex items-center gap-1.5">
-<span className="material-symbols-outlined text-[14px] text-secondary-fixed">handshake</span>
-<span>ADR Specialist</span>
-</div>
-</div>
-<div className="p-6 flex flex-col flex-1 justify-between gap-4">
-<div>
-<h3 className="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Sonia Al-Mansoor, Q.Med</h3>
-<span className="font-label-sm text-label-sm text-primary font-semibold block mb-2">Director of Dispute Resolution & Negotiation</span>
-<p className="font-body-sm text-body-sm text-on-surface-variant">Chartered mediator renowned for resolving multi-stakeholder labor impasses, shareholder disputes, and sensitive executive separations.</p>
-</div>
-<div className="flex items-center justify-between pt-4 border-t border-surface-container">
-<span className="font-caption text-caption text-on-surface-variant">Certified ADR Institute</span>
-<a className="text-primary hover:text-primary-container transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">contact_mail</span></a>
-</div>
-</div>
-</div>
-{/*  Profile 4  */}
-<div className="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col group">
-<div className="relative h-72 w-full overflow-hidden bg-surface-container">
-<img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Polished corporate executive male with silver hair in modern minimalist workspace with tablet, soft window reflection, looking directly forward with poise and leadership authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMKT-MGixzA0BR1pa5DLnG46N5TdAiI67egcOE-JAVZakeYLH8T8wwMr2kfk3b-P1UIPWkSc4x0gZFbebQAkFEOErEi9kssI31GxWLknuNokn7n6FZUYt_W16QEwxa_5YP1zpi7u7JXFr_hdqahKPFHko877Hhs7SlF1CVASLwapOXQbv2zBUnLTQ6GplyNQhAmhrC-hekwkPyJ1VQHg6OykQjSGWYatdgHMryc_TVwQXlOgZezEGb0w"/>
-<div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-inverse-surface/85 backdrop-blur-md text-white font-caption text-caption flex items-center gap-1.5">
-<span className="material-symbols-outlined text-[14px] text-primary-fixed">psychology</span>
-<span>People Risk</span>
-</div>
-</div>
-<div className="p-6 flex flex-col flex-1 justify-between gap-4">
-<div>
-<h3 className="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors">Tariq Sterling, CPHR</h3>
-<span className="font-label-sm text-label-sm text-primary font-semibold block mb-2">Senior HR Strategist & Governance Specialist</span>
-<p className="font-body-sm text-body-sm text-on-surface-variant">Directs workplace health diagnostics, psychological safety audits, and high-impact board governance masterclasses.</p>
-</div>
-<div className="flex items-center justify-between pt-4 border-t border-surface-container">
-<span className="font-caption text-caption text-on-surface-variant">Fellow, HR Institute</span>
-<a className="text-primary hover:text-primary-container transition-colors" href="#"><span className="material-symbols-outlined text-[18px]">contact_mail</span></a>
-</div>
+<Link to="/contact" className="px-6 py-3 rounded-full font-label-md text-label-md bg-primary hover:bg-primary-container text-on-primary shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+<span>Retain HCC Advisory</span>
+<span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+</Link>
 </div>
 </div>
 </div>
