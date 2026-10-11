@@ -396,7 +396,7 @@ function IndexComponent() {
                     </div>
                     <div className="flex flex-col">
                       <span className="font-caption text-caption uppercase tracking-wider text-surface-variant font-semibold">Secure Intake Escrow</span>
-                      <span className="font-title-md text-title-md font-bold text-on-primary">consult@holisticconcept.com</span>
+                      <a href="mailto:info@holisticconceptconsulting.com" className="font-title-md text-title-md font-bold text-on-primary hover:underline">info@holisticconceptconsulting.com</a>
                     </div>
                   </div>
                 </div>

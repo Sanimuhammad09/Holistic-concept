@@ -20,7 +20,7 @@ function RootComponent() {
                 Confidential Advisory Hotline
               </span>
               <span className="hidden md:inline text-on-surface-variant">Phone: +1 (403) 359-4972</span>
-              <span className="hidden sm:inline text-on-surface-variant">Email: consult@holisticconcept.com</span>
+              <a href="mailto:info@holisticconceptconsulting.com" className="hidden sm:inline text-on-surface-variant hover:text-primary transition-colors">Email: info@holisticconceptconsulting.com</a>
             </div>
             <div className="flex items-center gap-space-md">
               <span className="inline-flex items-center px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption">
@@ -179,6 +179,16 @@ function RootComponent() {
                 <span className="font-headline-sm text-headline-sm text-white font-bold">Holistic Concept Consulting</span>
               </div>
               <p className="font-body-sm text-body-sm text-slate-400 max-w-md">Trusted and recognized for delivering ethical, strategic, and practical solutions across complex corporate landscapes, public sector mandates, and executive transitions.</p>
+              <div className="flex flex-col gap-1.5 pt-1 font-body-sm text-body-sm text-slate-300">
+                <a href="mailto:info@holisticconceptconsulting.com" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <span className="material-symbols-outlined text-[18px] text-primary">mail</span>
+                  <span>info@holisticconceptconsulting.com</span>
+                </a>
+                <a href="tel:+14033594972" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <span className="material-symbols-outlined text-[18px] text-secondary">phone_in_talk</span>
+                  <span>+1 (403) 359-4972</span>
+                </a>
+              </div>
               <div className="flex items-center gap-space-sm pt-2">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800 text-slate-300 font-label-sm text-label-sm"><span className="w-2 h-2 rounded-full bg-secondary"></span>Verified High-Trust Advisory</span>
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800 text-slate-300 font-label-sm text-label-sm"><span className="material-symbols-outlined text-[14px]">verified</span>ISO 9001 Aligned</span>

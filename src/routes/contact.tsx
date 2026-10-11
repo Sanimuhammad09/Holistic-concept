@@ -288,6 +288,18 @@ function Contact() {
 </div>
 <span className="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
+<a className="mt-3 p-4 rounded-xl bg-surface-container-high text-on-surface flex items-center justify-between hover:bg-surface-container-highest transition-all shadow-sm group" href="mailto:info@holisticconceptconsulting.com">
+<div className="flex items-center gap-3">
+<div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span className="material-symbols-outlined text-[22px]">mail</span>
+</div>
+<div className="flex flex-col">
+<span className="font-caption text-caption text-on-surface-variant font-semibold uppercase tracking-wider">Official Email Desk</span>
+<span className="font-title-md text-title-md font-bold text-primary">info@holisticconceptconsulting.com</span>
+</div>
+</div>
+<span className="material-symbols-outlined text-[20px] text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
 {/*  Extension Directory  */}
 <div className="mt-6 flex flex-col gap-2.5">
 <span className="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-bold">Emergency Extension Directory</span>

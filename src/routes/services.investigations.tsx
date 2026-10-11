@@ -583,7 +583,7 @@ function ServicesInvestigationsHolisticConceptConsulting() {
 </div>
 <div>
 <div className="font-caption text-caption text-on-surface-variant">Secure Inquiries</div>
-<div className="font-title-md text-title-md text-on-surface">investigations@holisticconcept.com</div>
+<a href="mailto:info@holisticconceptconsulting.com" className="font-title-md text-title-md text-on-surface hover:text-primary transition-colors">info@holisticconceptconsulting.com</a>
 </div>
 </div>
 <div className="flex items-center gap-3">

@@ -592,7 +592,7 @@ function Sectors() {
 <div className="flex items-center gap-2 text-inverse-on-surface">
 <span className="material-symbols-outlined text-secondary-fixed text-[20px]">mark_email_read</span>
 <span className="font-bold">Secure Desk:</span>
-<span className="text-inverse-primary">advisory@holisticconcept.com</span>
+<a href="mailto:info@holisticconceptconsulting.com" className="text-inverse-primary hover:underline">info@holisticconceptconsulting.com</a>
 </div>
 </div>
 </div>
