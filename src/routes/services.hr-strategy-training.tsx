@@ -11,7 +11,7 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
   return (
     <>
       <main className="w-full pt-20 bg-background">
-      <SEO title="HR Strategy & Training | Holistic Concept Consulting" description="Expert human resources strategy, organizational restructuring, and executive leadership training." />
+      <SEO title="Human Resources, Training & Advisory | Holistic Concept Consulting" description="Comprehensive human resources optimization, business strategy training, and executive advisory and liaison services." />
 <div className="flex flex-col w-full">
 {/*  Top Hero Header Layer (Integrated under header space)  */}
 <AnimatedSection direction="up" delay={0.1} className="relative w-full overflow-hidden bg-surface-container-low py-space-xl lg:py-24">
@@ -24,13 +24,13 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 <div className="lg:col-span-7 flex flex-col gap-space-md">
 <div className="inline-flex items-center gap-space-xs self-start px-3.5 py-1.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm shadow-sm">
 <span className="w-2 h-2 rounded-full bg-secondary"></span>
-<span>Workforce Resilience & Executive Capability</span>
+<span>Workforce Resilience, Training & Executive Liaison</span>
 </div>
 <h1 className="font-display-hero text-display-hero text-on-surface tracking-tight">
-            Human Resources Optimization & Business Strategy Training
+            Human Resources, Business Strategy Training & Advisory Services
           </h1>
 <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-            Empowering leadership, fostering high-performance cultures, and developing institutional capability through rigorous behavioral frameworks and forward-looking organizational design.
+            Empowering leadership, fostering high-performance cultures, and developing institutional capability through rigorous behavioral frameworks, accredited executive training, and strategic stakeholder liaison.
           </p>
 <div className="flex flex-wrap items-center gap-space-md pt-space-sm">
 <a className="px-6 py-3.5 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-lg hover:shadow-xl hover:bg-primary-container transition-all flex items-center gap-space-xs" href="#booking-form">
@@ -84,7 +84,7 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 </div>
 </AnimatedSection>
 {/*  SECTION A: Human Resources Consulting Services  */}
-<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface scroll-mt-24" id="human-resources">
 <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
 <div className="flex flex-col gap-2 max-w-2xl">
@@ -193,7 +193,7 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 </div>
 </AnimatedSection>
 {/*  SECTION B: Business Strategy Training & Workshops  */}
-<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface-container-low relative">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface-container-low relative scroll-mt-24" id="business-strategy-training">
 <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
 <div className="flex flex-col gap-2 max-w-2xl">
@@ -527,6 +527,81 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 </div>
 </div>
 </AnimatedSection>
+{/*  SECTION C: Advisory and Liaison Services  */}
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface scroll-mt-24 border-t border-surface-container" id="advisory-liaison">
+  <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
+    <div className="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+      <div className="flex flex-col gap-2 max-w-2xl">
+        <div className="flex items-center gap-2">
+          <span className="font-caption text-caption uppercase tracking-widest text-primary font-bold">Advisory Stream 03</span>
+          <div className="h-0.5 w-12 bg-primary"></div>
+        </div>
+        <h2 className="font-headline-xl text-headline-xl text-on-surface">
+          Advisory and Liaison Services
+        </h2>
+        <p className="font-body-md text-body-md text-on-surface-variant">
+          Strategic intermediary representation and boardroom advisory bridging executive leadership, government authorities, crown corporations, and multi-stakeholder governance bodies.
+        </p>
+      </div>
+      <div className="flex items-center gap-2">
+        <span className="px-3.5 py-1.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+          High-Level Institutional Intermediary
+        </span>
+      </div>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+        <div className="flex flex-col gap-4">
+          <div className="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary">
+            <span className="material-symbols-outlined text-[26px]">hub</span>
+          </div>
+          <h3 className="font-title-md text-title-md text-on-surface font-bold">Public-Private Sector & Agency Liaison</h3>
+          <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Acting as a trusted, neutral conduit between commercial entities, municipal authorities, regulatory agencies, and ministry offices during complex collaborative initiatives.
+          </p>
+        </div>
+        <div className="pt-6 mt-6 border-t border-surface-container flex items-center justify-between font-caption text-caption text-on-surface-variant">
+          <span>Regulatory Diplomacy</span>
+          <span className="material-symbols-outlined text-primary text-[18px]">verified</span>
+        </div>
+      </div>
+
+      <div className="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+        <div className="flex flex-col gap-4">
+          <div className="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-secondary">
+            <span className="material-symbols-outlined text-[26px]">table_bar</span>
+          </div>
+          <h3 className="font-title-md text-title-md text-on-surface font-bold">Boardroom Governance & Special Counsel</h3>
+          <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Confidential counsel to Chairs, Nominating Committees, and Executive Boards on sensitive leadership transitions, fiduciary duties, and crisis response orchestration.
+          </p>
+        </div>
+        <div className="pt-6 mt-6 border-t border-surface-container flex items-center justify-between font-caption text-caption text-on-surface-variant">
+          <span>Fiduciary Neutrality</span>
+          <span className="material-symbols-outlined text-secondary text-[18px]">verified</span>
+        </div>
+      </div>
+
+      <div className="bg-surface-container-lowest p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all flex flex-col justify-between">
+        <div className="flex flex-col gap-4">
+          <div className="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+            <span className="material-symbols-outlined text-[26px]">handshake</span>
+          </div>
+          <h3 className="font-title-md text-title-md text-on-surface font-bold">Multi-Stakeholder Consensus Facilitation</h3>
+          <p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Aligning divergent priorities across joint-venture partners, labor unions, indigenous communities, and institutional investors to secure lasting consensus.
+          </p>
+        </div>
+        <div className="pt-6 mt-6 border-t border-surface-container flex items-center justify-between font-caption text-caption text-on-surface-variant">
+          <span>Consensus Building</span>
+          <span className="material-symbols-outlined text-primary text-[18px]">verified</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</AnimatedSection>
+
 {/*  SECTION: Client Impact Testimonials & Case Snapshots  */}
 <AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface-container-low">
 <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
@@ -685,12 +760,11 @@ function ServicesHrStrategyTrainingHolisticConceptConsulting() {
 <label className="font-label-sm text-label-sm text-on-surface font-semibold" htmlFor="service-stream">Primary Advisory Requirement *</label>
 <select className="h-12 px-4 rounded-lg bg-surface-container-lowest text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="service-stream" required>
 <option value="">Select Service Area</option>
-<option value="hr-consulting">HR Consulting & Climate Audit</option>
-<option value="interim-leadership">Fractional / Interim Senior HR Leadership</option>
-<option value="exec-training">Executive Governance & Ethics Workshop</option>
+<option value="human-resources">Human Resources Optimization & People Risk</option>
+<option value="business-strategy-training">Business Strategy Training & Executive Workshops</option>
+<option value="advisory-liaison">Advisory and Liaison Services</option>
 <option value="conflict-mediation">Conflict Management & De-escalation Training</option>
-<option value="harassment-accessibility">Anti-Harassment & Accessibility Standards</option>
-<option value="strategic-alignment">Board Strategic Planning Retreat</option>
+<option value="board-governance">Boardroom Strategic Governance Retreat</option>
 </select>
 </div>
 </div>

@@ -91,7 +91,7 @@ function ServicesInvestigationsHolisticConceptConsulting() {
 </div>
 </AnimatedSection>
 {/*  Overview of Investigative Practice  */}
-<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface scroll-mt-24" id="investigations">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 <div className="lg:col-span-4">

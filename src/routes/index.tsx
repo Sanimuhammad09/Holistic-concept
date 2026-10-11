@@ -278,20 +278,21 @@ function IndexComponent() {
                   Our Core Practice Pillars
                 </h2>
                 <p className="font-body-lg text-body-lg text-on-surface-variant">
-                  Eight synchronized disciplines engineered to protect enterprise stability, uphold legal compliance, and elevate institutional culture.
+                  Nine synchronized disciplines engineered to protect enterprise stability, uphold legal compliance, and elevate institutional culture.
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { icon: 'policy', title: 'Investigations', desc: 'Impartial workplace misconduct reviews, forensic audits, harassment probes, and confidential whistleblower disclosures.', link: '/services/investigations', tag: 'Evidentiary Rigor', bg: 'bg-primary-fixed text-primary' },
-                { icon: 'handshake', title: 'Negotiation & Mediation', desc: 'High-stakes contract resolution, executive severance facilitation, collective bargaining dialogue, and cross-party consensus.', link: '/services/negotiation-process-serving', tag: 'Consensus Built', bg: 'bg-secondary-fixed text-on-secondary-fixed-variant' },
-                { icon: 'edit_document', title: 'Draft & Review Policies', desc: 'Comprehensive statutory compliance updates, employee handbooks, workplace harassment guidelines, and regulatory alignment.', link: '/services/policies-accessibility', tag: 'Statutory Compliance', bg: 'bg-surface-container-high text-primary' },
-                { icon: 'accessibility_new', title: 'Accessibility Plans', desc: 'Comprehensive multi-year statutory accessibility plans for digital spaces, facilities, and organizational policy.', link: '/services/policies-accessibility', tag: 'Accessibility Standards', bg: 'bg-secondary-container text-on-secondary-container' },
-                { icon: 'mark_email_read', title: 'Specialized Process Serving', desc: 'Prompt, legally watertight delivery of subpoenas, formal tribunal notices, and sensitive summonses with verifiable affidavits.', link: '/services/negotiation-process-serving', tag: 'Judicial Verification', bg: 'bg-surface-container-high text-primary' },
-                { icon: 'groups_3', title: 'Human Resources Strategy', desc: 'Navigating employee friction, organizational restructures, high-risk terminations, and psychological health initiatives.', link: '/services/hr-strategy-training', tag: 'Culture & Risk', bg: 'bg-primary-fixed-dim text-primary-container' },
-                { icon: 'school', title: 'Business Strategy Training', desc: 'Boardroom seminars, ethics coaching, middle-management conflict de-escalation labs, and operational drill modules.', link: '/services/hr-strategy-training', tag: 'Executive Workshops', bg: 'bg-secondary-fixed text-secondary' },
-                { icon: 'hub', title: 'Advisory & Liaison', desc: 'Intermediary counsel for public-private joint ventures, multi-stakeholder governance boards, and agency liaison tasks.', link: '/executive-zenith', tag: 'Institutional Liaison', bg: 'bg-surface-container-high text-primary' }
+                { icon: 'handshake', title: 'Negotiation', desc: 'High-stakes contract resolution, executive severance facilitation, collective bargaining dialogue, and cross-party consensus.', link: '/services/negotiation-process-serving#negotiation', tag: 'Consensus Built', bg: 'bg-secondary-fixed text-on-secondary-fixed-variant' },
+                { icon: 'edit_document', title: 'Draft and review policies', desc: 'Comprehensive statutory compliance updates, employee handbooks, workplace harassment guidelines, and regulatory alignment.', link: '/services/policies-accessibility#draft-review-policies', tag: 'Statutory Compliance', bg: 'bg-surface-container-high text-primary' },
+                { icon: 'verified_user', title: 'Compliance Management', desc: 'Continuous regulatory audits, risk matrix evaluations, ministry inspection readiness, and corporate governance adherence.', link: '/services/policies-accessibility#compliance-management', tag: 'Regulatory Assurance', bg: 'bg-secondary-container text-on-secondary-container' },
+                { icon: 'accessibility_new', title: 'Accessibility plan', desc: 'Comprehensive multi-year statutory accessibility plans (MYAP) for digital spaces, facilities, and organizational policy.', link: '/services/policies-accessibility#accessibility-plan', tag: 'Universal Inclusivity', bg: 'bg-primary-fixed-dim text-primary-container' },
+                { icon: 'mark_email_read', title: 'Process server', desc: 'Prompt, legally watertight delivery of subpoenas, formal tribunal notices, and sensitive summonses with verifiable affidavits.', link: '/services/negotiation-process-serving#process-server', tag: 'Judicial Verification', bg: 'bg-surface-container-high text-primary' },
+                { icon: 'groups_3', title: 'Human resources', desc: 'Navigating employee friction, organizational restructures, high-risk terminations, and psychological health initiatives.', link: '/services/hr-strategy-training#human-resources', tag: 'Culture & Risk', bg: 'bg-secondary-fixed text-secondary' },
+                { icon: 'school', title: 'Business strategy training', desc: 'Boardroom seminars, ethics coaching, middle-management conflict de-escalation labs, and operational drill modules.', link: '/services/hr-strategy-training#business-strategy-training', tag: 'Executive Workshops', bg: 'bg-primary-fixed text-primary' },
+                { icon: 'hub', title: 'Advisory and liaison services', desc: 'Intermediary counsel for public-private joint ventures, multi-stakeholder governance boards, and government agency liaison tasks.', link: '/services/hr-strategy-training#advisory-liaison', tag: 'Institutional Liaison', bg: 'bg-secondary-container text-on-secondary-container' }
               ].map((service, idx) => (
                 <div key={idx} className="group flex flex-col justify-between p-6 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <div className="flex flex-col gap-4">
@@ -441,14 +442,15 @@ function IndexComponent() {
                     <div className="flex flex-col gap-1">
                       <label className="font-label-sm text-label-sm text-on-surface-variant font-medium">Pillar of Interest</label>
                       <select className="w-full px-4 py-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary">
-                        <option>Workplace Investigation & Audit</option>
-                        <option>Strategic Negotiation & Mediation</option>
-                        <option>Policy Drafting & Review</option>
-                        <option>Accessibility & Compliance Standards</option>
-                        <option>Specialized Process Serving</option>
-                        <option>Human Resources & People Risk</option>
-                        <option>Executive Leadership Training</option>
-                        <option>Boardroom Advisory & Public Liaison</option>
+                        <option>Investigations</option>
+                        <option>Negotiation</option>
+                        <option>Draft and review policies</option>
+                        <option>Compliance Management</option>
+                        <option>Accessibility plan</option>
+                        <option>Process server</option>
+                        <option>Human resources</option>
+                        <option>Business strategy training</option>
+                        <option>Advisory and liaison services</option>
                       </select>
                     </div>
                     <div className="flex flex-col gap-1">

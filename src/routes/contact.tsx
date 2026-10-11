@@ -154,14 +154,15 @@ function Contact() {
 <span className="material-symbols-outlined absolute left-3.5 text-outline text-[18px]">category</span>
 <select className="w-full h-12 pl-10 pr-10 bg-surface-bright rounded-lg font-body-sm text-body-sm text-on-surface outline-none focus:bg-surface-container-lowest focus:shadow-md appearance-none cursor-pointer transition-all" id="practiceStream" required>
 <option disabled value="">Select Strategic Practice Domain...</option>
-<option value="investigations">Corporate Investigations & Forensic Fact-Finding</option>
-<option value="negotiation">High-Stakes Negotiation & Institutional Mediation</option>
-<option value="policies">Regulatory Policy Architecture & Compliance Audit</option>
-<option value="accessibility">Institutional Accessibility & Human Rights Frameworks</option>
-<option value="process_serving">Expedited Process Serving & Litigation Logistics</option>
-<option value="hr_consulting">Executive HR Consulting & Sensitive Workplace Reviews</option>
-<option value="business_training">Boardroom Governance & Ethics Training</option>
-<option value="advisory">Strategic Advisory & Public Sector Liaison</option>
+<option value="investigations">Investigations</option>
+<option value="negotiation">Negotiation</option>
+<option value="policies">Draft and review policies</option>
+<option value="compliance">Compliance Management</option>
+<option value="accessibility">Accessibility plan</option>
+<option value="process_server">Process server</option>
+<option value="hr">Human resources</option>
+<option value="training">Business strategy training</option>
+<option value="advisory">Advisory and liaison services</option>
 </select>
 <span className="material-symbols-outlined absolute right-3.5 text-outline pointer-events-none text-[18px]">unfold_more</span>
 </div>

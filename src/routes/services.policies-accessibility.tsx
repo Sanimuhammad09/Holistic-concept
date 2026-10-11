@@ -97,8 +97,8 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 <span className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary-fixed-variant"></span>Anti-Violence & Harassment Frameworks</span>
 </div>
 </div>
-{/*  Pillar 1: Policy Drafting & Comprehensive Review  */}
-<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface">
+{/*  Pillar 1: Draft and Review Policies  */}
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface scroll-mt-24" id="draft-review-policies">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
 <div className="max-w-2xl">
@@ -107,7 +107,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 <span>Strategic Pillar 01</span>
 </div>
 <h2 className="font-headline-xl text-headline-xl text-on-surface tracking-tight">
-            Policy Drafting & Comprehensive Review
+            Draft and Review Policies
           </h2>
 <p className="font-body-md text-body-md text-on-surface-variant mt-3">
             Defensible corporate policies are not standard templates. We construct customized, legally examined institutional documents that balance employee protection with organizational agility and regulatory mandates.
@@ -233,7 +233,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 </div>
 </AnimatedSection>
 {/*  Pillar 2: Accessibility Plan Development (Corporate Governance & Accessibility Standards)  */}
-<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface-container-low relative overflow-hidden">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface-container-low relative overflow-hidden scroll-mt-24" id="accessibility-plan">
 {/*  Ambient mesh gradient  */}
 <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none"></div>
 <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
@@ -244,7 +244,7 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 <span>Strategic Pillar 02</span>
 </div>
 <h2 className="font-headline-xl text-headline-xl text-on-surface tracking-tight">
-            Comprehensive Accessibility Plan (MYAP) Architecture
+            Accessibility Plan Architecture & Mandates
           </h2>
 <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
             Accessibility is both an urgent human imperative and an unforgiving statutory obligation. We steer organizations away from passive compliance into proactive barrier identification, formulating multi-year blueprints governed by recognized jurisdictional accessibility frameworks, human rights codes, and corporate statutory compliance mandates.
@@ -441,14 +441,14 @@ function ServicesPoliciesAccessibilityHolisticConceptConsulting() {
 </div>
 </div>
 </AnimatedSection>
-{/*  Compliance Risk Matrix Section  */}
-<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface-container-lowest" id="audit-matrix">
+{/*  Compliance Management & Risk Matrix Section  */}
+<AnimatedSection direction="up" delay={0.1} className="w-full py-20 bg-surface-container-lowest scroll-mt-24" id="compliance-management">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
 <div>
-<span className="font-caption text-caption text-error font-bold uppercase tracking-wider">Liability Differential</span>
+<span className="font-caption text-caption text-secondary font-bold uppercase tracking-wider">Statutory Oversight & Governance</span>
 <h2 className="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">
-            Compliance Risk Matrix
+            Compliance Management & Risk Matrix
           </h2>
 <p className="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl">
             A comparison of organizational vulnerabilities under obsolete or generic policies versus protection under Holistic Concept Consulting frameworks.

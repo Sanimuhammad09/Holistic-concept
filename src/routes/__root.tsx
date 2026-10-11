@@ -44,16 +44,44 @@ function RootComponent() {
               <span className="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface inline-flex items-center gap-1 transition-colors cursor-pointer">
                 Services<span className="material-symbols-outlined text-[16px]">expand_more</span>
               </span>
-              <div className="absolute top-full left-0 w-72 pt-2 hidden group-hover:block transition-all">
-                <div className="bg-surface-container-lowest rounded-xl shadow-[0_12px_30px_-8px_rgba(15,23,42,0.1)] p-space-sm flex flex-col gap-1">
-                  <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/investigations">Investigations & Forensic Review</Link>
-                  <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/negotiation-process-serving">Strategic Negotiation</Link>
-                  <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/policies-accessibility">Policies & Regulatory Compliance</Link>
-                  <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/policies-accessibility">Accessibility & Compliance Standards</Link>
-                  <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/negotiation-process-serving">Specialized Process Serving</Link>
-                  <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/hr-strategy-training">Strategic HR & People Risk</Link>
-                  <Link className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" to="/services/hr-strategy-training">Executive & Governance Training</Link>
-                  <a className="px-space-sm py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" href="/#">Boardroom Strategic Advisory</a>
+              <div className="absolute top-full -left-12 w-[340px] pt-2 hidden group-hover:block transition-all z-50">
+                <div className="bg-surface-container-lowest rounded-2xl shadow-[0_16px_36px_-8px_rgba(15,23,42,0.15)] border border-outline-variant/40 p-2.5 flex flex-col gap-0.5">
+                  <Link className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors flex items-center gap-2.5" to="/services/investigations">
+                    <span className="material-symbols-outlined text-[18px] text-primary">policy</span>
+                    <span>Investigations</span>
+                  </Link>
+                  <Link className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors flex items-center gap-2.5" to="/services/negotiation-process-serving" hash="negotiation">
+                    <span className="material-symbols-outlined text-[18px] text-secondary">handshake</span>
+                    <span>Negotiation</span>
+                  </Link>
+                  <Link className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors flex items-center gap-2.5" to="/services/policies-accessibility" hash="draft-review-policies">
+                    <span className="material-symbols-outlined text-[18px] text-primary">edit_document</span>
+                    <span>Draft and review policies</span>
+                  </Link>
+                  <Link className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors flex items-center gap-2.5" to="/services/policies-accessibility" hash="compliance-management">
+                    <span className="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+                    <span>Compliance Management</span>
+                  </Link>
+                  <Link className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors flex items-center gap-2.5" to="/services/policies-accessibility" hash="accessibility-plan">
+                    <span className="material-symbols-outlined text-[18px] text-primary">accessibility_new</span>
+                    <span>Accessibility plan</span>
+                  </Link>
+                  <Link className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors flex items-center gap-2.5" to="/services/negotiation-process-serving" hash="process-server">
+                    <span className="material-symbols-outlined text-[18px] text-secondary">mark_email_read</span>
+                    <span>Process server</span>
+                  </Link>
+                  <Link className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors flex items-center gap-2.5" to="/services/hr-strategy-training" hash="human-resources">
+                    <span className="material-symbols-outlined text-[18px] text-primary">groups_3</span>
+                    <span>Human resources</span>
+                  </Link>
+                  <Link className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors flex items-center gap-2.5" to="/services/hr-strategy-training" hash="business-strategy-training">
+                    <span className="material-symbols-outlined text-[18px] text-secondary">school</span>
+                    <span>Business strategy training</span>
+                  </Link>
+                  <Link className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors flex items-center gap-2.5" to="/services/hr-strategy-training" hash="advisory-liaison">
+                    <span className="material-symbols-outlined text-[18px] text-primary">hub</span>
+                    <span>Advisory and liaison services</span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -82,16 +110,47 @@ function RootComponent() {
               <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container" to="/">Home</Link>
               <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container" to="/about">About Us</Link>
               
-              <div className="px-4 py-2 font-label-md text-label-md font-bold text-on-surface mt-2">Services</div>
-              <div className="flex flex-col pl-4 border-l-2 border-surface-container ml-6 gap-1">
-                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/investigations">Investigations & Forensic Review</Link>
-                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/negotiation-process-serving">Strategic Negotiation</Link>
-                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/policies-accessibility">Policies & Regulatory Compliance</Link>
-                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/policies-accessibility">Accessibility & Compliance Standards</Link>
-                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/negotiation-process-serving">Specialized Process Serving</Link>
-                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/hr-strategy-training">Strategic HR & People Risk</Link>
-                  <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" to="/services/hr-strategy-training">Executive & Governance Training</Link>
-                  <a onClick={() => setMobileMenuOpen(false)} className="px-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container" href="/#">Boardroom Strategic Advisory</a>
+              <div className="px-4 py-2 font-label-md text-label-md font-bold text-on-surface mt-2 flex items-center justify-between">
+                <span>Services</span>
+                <span className="font-caption text-caption text-secondary font-semibold">9 Disciplines</span>
+              </div>
+              <div className="flex flex-col pl-3 border-l-2 border-surface-container ml-4 gap-1">
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container flex items-center gap-2" to="/services/investigations">
+                    <span className="material-symbols-outlined text-[16px] text-primary">policy</span>
+                    <span>Investigations</span>
+                  </Link>
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container flex items-center gap-2" to="/services/negotiation-process-serving" hash="negotiation">
+                    <span className="material-symbols-outlined text-[16px] text-secondary">handshake</span>
+                    <span>Negotiation</span>
+                  </Link>
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container flex items-center gap-2" to="/services/policies-accessibility" hash="draft-review-policies">
+                    <span className="material-symbols-outlined text-[16px] text-primary">edit_document</span>
+                    <span>Draft and review policies</span>
+                  </Link>
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container flex items-center gap-2" to="/services/policies-accessibility" hash="compliance-management">
+                    <span className="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+                    <span>Compliance Management</span>
+                  </Link>
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container flex items-center gap-2" to="/services/policies-accessibility" hash="accessibility-plan">
+                    <span className="material-symbols-outlined text-[16px] text-primary">accessibility_new</span>
+                    <span>Accessibility plan</span>
+                  </Link>
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container flex items-center gap-2" to="/services/negotiation-process-serving" hash="process-server">
+                    <span className="material-symbols-outlined text-[16px] text-secondary">mark_email_read</span>
+                    <span>Process server</span>
+                  </Link>
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container flex items-center gap-2" to="/services/hr-strategy-training" hash="human-resources">
+                    <span className="material-symbols-outlined text-[16px] text-primary">groups_3</span>
+                    <span>Human resources</span>
+                  </Link>
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container flex items-center gap-2" to="/services/hr-strategy-training" hash="business-strategy-training">
+                    <span className="material-symbols-outlined text-[16px] text-secondary">school</span>
+                    <span>Business strategy training</span>
+                  </Link>
+                  <Link onClick={() => setMobileMenuOpen(false)} className="px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container flex items-center gap-2" to="/services/hr-strategy-training" hash="advisory-liaison">
+                    <span className="material-symbols-outlined text-[16px] text-primary">hub</span>
+                    <span>Advisory and liaison services</span>
+                  </Link>
               </div>
 
               <Link onClick={() => setMobileMenuOpen(false)} className="px-4 py-3 rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container mt-2" to="/sectors">Sectors</Link>
@@ -126,14 +185,17 @@ function RootComponent() {
               </div>
             </div>
             <div className="flex flex-col gap-space-sm">
-              <span className="font-title-md text-title-md text-white">Core Services</span>
+              <span className="font-title-md text-title-md text-white font-bold">Services Provided</span>
               <div className="flex flex-col gap-2 font-body-sm text-body-sm text-slate-400">
-                <Link className="hover:text-white transition-colors" to="/services/investigations">Investigations & Audit</Link>
-                <Link className="hover:text-white transition-colors" to="/services/negotiation-process-serving">Strategic Negotiation</Link>
-                <Link className="hover:text-white transition-colors" to="/services/policies-accessibility">Policy Architecture</Link>
-                <Link className="hover:text-white transition-colors" to="/services/policies-accessibility">Accessibility & Compliance Standards</Link>
-                <Link className="hover:text-white transition-colors" to="/services/negotiation-process-serving">Process Serving Unit</Link>
-                <Link className="hover:text-white transition-colors" to="/services/hr-strategy-training">HR & People Risk</Link>
+                <Link className="hover:text-white transition-colors" to="/services/investigations">Investigations</Link>
+                <Link className="hover:text-white transition-colors" to="/services/negotiation-process-serving" hash="negotiation">Negotiation</Link>
+                <Link className="hover:text-white transition-colors" to="/services/policies-accessibility" hash="draft-review-policies">Draft and review policies</Link>
+                <Link className="hover:text-white transition-colors" to="/services/policies-accessibility" hash="compliance-management">Compliance Management</Link>
+                <Link className="hover:text-white transition-colors" to="/services/policies-accessibility" hash="accessibility-plan">Accessibility plan</Link>
+                <Link className="hover:text-white transition-colors" to="/services/negotiation-process-serving" hash="process-server">Process server</Link>
+                <Link className="hover:text-white transition-colors" to="/services/hr-strategy-training" hash="human-resources">Human resources</Link>
+                <Link className="hover:text-white transition-colors" to="/services/hr-strategy-training" hash="business-strategy-training">Business strategy training</Link>
+                <Link className="hover:text-white transition-colors" to="/services/hr-strategy-training" hash="advisory-liaison">Advisory and liaison services</Link>
               </div>
             </div>
             <div className="flex flex-col gap-space-sm">

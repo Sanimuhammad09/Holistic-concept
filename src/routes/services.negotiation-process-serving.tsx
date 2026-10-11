@@ -112,7 +112,7 @@ function ServicesNegotiationProcessServingHolisticConceptConsulting() {
 </div>
 </AnimatedSection>
 {/*  SECTION 1: Strategic Negotiation & Dispute Mediation  */}
-<AnimatedSection direction="up" delay={0.1} className="w-full py-16 bg-surface" id="negotiation-practice">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-16 bg-surface scroll-mt-24" id="negotiation">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 {/*  Section Header  */}
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12">
@@ -269,7 +269,7 @@ function ServicesNegotiationProcessServingHolisticConceptConsulting() {
 </div>
 </AnimatedSection>
 {/*  SECTION 2: Professional Process Server Services  */}
-<AnimatedSection direction="up" delay={0.1} className="w-full py-16 bg-surface-container-low" id="process-serving-unit">
+<AnimatedSection direction="up" delay={0.1} className="w-full py-16 bg-surface-container-low scroll-mt-24" id="process-server">
 <div className="max-w-7xl mx-auto px-6 lg:px-12">
 {/*  Section Title & Badge  */}
 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12">
@@ -278,7 +278,7 @@ function ServicesNegotiationProcessServingHolisticConceptConsulting() {
 <span className="w-2 h-2 rounded-full bg-primary"></span>
             Practice Pillar Beta
           </div>
-<h2 className="font-headline-lg text-headline-lg text-on-surface font-bold">Professional Process Server Operations</h2>
+<h2 className="font-headline-lg text-headline-lg text-on-surface font-bold">Professional Process Server Services</h2>
 <p className="font-body-md text-body-md text-on-surface-variant mt-2">
             Flawless execution is mandatory to prevent jurisdictional challenges and procedural delays. Our dedicated legal support officers execute service strictly pursuant to the Rules of Civil Procedure.
           </p>
