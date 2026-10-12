@@ -360,9 +360,9 @@ Executive Leadership & Visionary Stewardship
 <div className="w-full sm:w-80 lg:w-96 shrink-0 flex flex-col gap-5">
 <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[3/4] bg-surface-container group">
 <img 
-src="/founder.jpg" 
+src="/nosa-ebhomielen.jpg" 
 alt="Nosa Ebhomielen, Founder of Holistic Concept Consulting" 
-className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" 
+className="w-full h-full object-cover object-[center_22%] group-hover:scale-105 transition-transform duration-700" 
 />
 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
 <div className="absolute bottom-4 left-4 right-4 flex flex-col gap-1 text-white">
