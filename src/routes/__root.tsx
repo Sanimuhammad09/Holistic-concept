@@ -29,11 +29,11 @@ function RootComponent() {
             </div>
           </div>
         </div>
-        <div className="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-lg">
-          <Link className="flex items-center gap-space-sm shrink-0" to="/">
-            <img alt="Holistic Logo" className="h-10 w-auto object-contain rounded-md" src="/logo.jpg" onError={(e) => e.currentTarget.style.display = 'none'} />
+        <div className="h-20 md:h-24 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-lg">
+          <Link className="flex items-center gap-3 sm:gap-4 shrink-0" to="/">
+            <img alt="Holistic Logo" className="h-14 sm:h-16 md:h-20 w-auto object-contain rounded-lg shadow-sm" src="/logo.jpg" onError={(e) => e.currentTarget.style.display = 'none'} />
             <div className="flex flex-col">
-              <span className="font-headline-sm text-headline-sm text-primary leading-tight font-bold tracking-tight">Holistic Concept Consulting</span>
+              <span className="font-headline-sm text-headline-sm sm:text-headline-md text-primary leading-tight font-bold tracking-tight">Holistic Concept Consulting</span>
               <span className="font-caption text-caption text-on-surface-variant tracking-wider uppercase">Strategic & Ethical Solutions</span>
             </div>
           </Link>
@@ -166,7 +166,7 @@ function RootComponent() {
         )}
       </header>
 
-      <main className="flex-1 w-full pt-32 bg-background flex flex-col">
+      <main className="flex-1 w-full pt-32 md:pt-36 bg-background flex flex-col">
         <Outlet />
       </main>
 
