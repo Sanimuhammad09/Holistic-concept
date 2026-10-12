@@ -58,46 +58,17 @@ function AboutUsHolisticConceptConsulting() {
 </div>
 </div>
 </div>
-{/*  Hero Visual Showcase Bento with Emblem Reference Accent  */}
-<div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-4">
-<div className="lg:col-span-8 relative h-[360px] rounded-xl overflow-hidden shadow-xl group">
+{/*  Hero Visual Showcase  */}
+<div className="w-full relative h-[360px] sm:h-[420px] rounded-2xl overflow-hidden shadow-xl group mt-4">
 <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Refined, sunlit architectural executive boardroom with glass walls, natural timber acoustics, polished surfaces, and contemporary biophilic plants, bathed in tranquil morning light symbolizing ethical governance and institutional transparency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBImkjuQuI0KwcfR52cfwBxVGu6YFZUfN4crpktLdmlkCtx5fA0Kwy4Vnv2tu5xlDqGlk2HFxwhqC2GpyQ5oPcemsoS0IpzgwcRz2LK0z4D60gXuUZ-ytlgkC9ZptJepswrpkvVaIQBb4kGwcIIs_RmA4uyo6hSfZus9PPP6T2HnRrFvy9UpG5yLKQVn5dLW7pqnDE2n1lvyqR-cLsK1puS1XsOG8fPXicFGeTZxCMlg5H4MV1BjPjBnw"/>
-<div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/30 to-transparent flex flex-col justify-end p-8 text-inverse-on-surface">
-<div className="flex items-center gap-2 mb-2">
-<span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-caption text-caption">Boardroom Trust</span>
+<div className="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/40 to-transparent flex flex-col justify-end p-8 sm:p-12 text-inverse-on-surface">
+<div className="flex items-center gap-2 mb-3">
+<span className="inline-flex items-center px-3 py-1 rounded-full bg-primary text-on-primary font-caption text-caption font-semibold">Boardroom Trust</span>
 <span className="font-caption text-caption text-inverse-on-surface/80">Independent Counsel Retainer</span>
 </div>
-<h2 className="font-headline-md text-headline-md font-bold text-white max-w-xl">
-                Synthesizing law, organizational psychology, and procedural justice.
-              </h2>
-</div>
-</div>
-<div className="lg:col-span-4 bg-surface-container-lowest rounded-xl p-8 shadow-sm flex flex-col justify-between relative overflow-hidden">
-<div className="absolute -right-8 -bottom-8 w-48 h-48 rounded-full bg-secondary-fixed/20 blur-2xl pointer-events-none"></div>
-<div>
-<div className="flex items-center justify-between pb-4">
-<span className="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">The Emblem Dynamic</span>
-<span className="material-symbols-outlined text-primary text-[22px]">energy_savings_leaf</span>
-</div>
-<h3 className="font-title-md text-title-md text-on-surface mb-2">Six Leaves of Equilibrium</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                Inspired by the radial flower emblem, our holistic method harmonizes the six interdependent facets of enterprise health: Ethics, Law, Equity, Culture, Risk, and Governance.
-              </p>
-</div>
-<div className="pt-6 grid grid-cols-3 gap-2 text-center">
-<div className="bg-surface-container-low p-2.5 rounded-lg">
-<span className="block font-headline-sm text-headline-sm font-bold text-primary">99.4%</span>
-<span className="font-caption text-caption text-on-surface-variant">Resolution Index</span>
-</div>
-<div className="bg-surface-container-low p-2.5 rounded-lg">
-<span className="block font-headline-sm text-headline-sm font-bold text-secondary">340+</span>
-<span className="font-caption text-caption text-on-surface-variant">Inquiries Closed</span>
-</div>
-<div className="bg-surface-container-low p-2.5 rounded-lg">
-<span className="block font-headline-sm text-headline-sm font-bold text-on-surface">14+</span>
-<span className="font-caption text-caption text-on-surface-variant">Years Retainer</span>
-</div>
-</div>
+<h2 className="font-headline-lg text-headline-lg font-bold text-white max-w-2xl leading-tight">
+Synthesizing law, organizational psychology, and procedural justice.
+</h2>
 </div>
 </div>
 </div>
