@@ -391,9 +391,6 @@ Alberta Justice & Solicitor General Licensed
 <h3 className="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mt-1">
 Nosa Ebhomielen
 </h3>
-<p className="font-title-md text-title-md text-primary font-semibold">
-Multifaceted Business & Legal Specialist • Lawyer • Licensed Investigator
-</p>
 </div>
 
 {/* Core Biography - Highlighted Presentation */}
@@ -402,7 +399,7 @@ Multifaceted Business & Legal Specialist • Lawyer • Licensed Investigator
 <strong>Nosa Ebhomielen</strong> is a multifaceted business and legal specialist with over 15 years of experience. She has a Master of Business Administration (MBA) with distinction from the University of Gloucestershire in the United Kingdom and formidable legal expertise as a lawyer.
 </p>
 <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-4">
-She is a licensed investigator under the Security Services and Investigators Act by Alberta Justice and the Solicitor General. She is a board member for several non-profit organizations in the city of Lethbridge. She has lived in Nigeria and the United Kingdom and is currently residing in Lethbridge, Alberta.
+She is a licensed investigator under the Security Services and Investigators Act by Alberta Justice and the Solicitor General. She is a board member for several non-profit organizations in the city of Alberta. She has lived in Nigeria and the United Kingdom and is currently residing in Lethbridge, Alberta.
 </p>
 </div>
 
@@ -444,7 +441,7 @@ Master of Business Administration (MBA) earned with distinction from the Univers
 </div>
 <span className="font-label-md text-label-md font-bold text-on-surface">Governance & Community</span>
 <p className="font-body-sm text-body-sm text-on-surface-variant">
-Active board member for multiple non-profit organizations in Lethbridge, bringing international perspective from Nigeria, the UK, and Canada.
+Active board member for multiple non-profit organizations in Alberta, bringing international perspective from Nigeria, the UK, and Canada.
 </p>
 </div>
 </div>
