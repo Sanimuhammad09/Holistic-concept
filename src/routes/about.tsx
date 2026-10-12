@@ -358,19 +358,18 @@ Executive Leadership & Visionary Stewardship
 <div className="bg-surface-container-lowest rounded-3xl p-6 sm:p-10 lg:p-12 shadow-lg border border-surface-container flex flex-col lg:flex-row gap-10 lg:gap-14 items-center lg:items-stretch">
 {/*  Left: Portrait & Fast Credentials  */}
 <div className="w-full sm:w-80 lg:w-96 shrink-0 flex flex-col gap-5">
-<div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[3/4] bg-surface-container group">
+<div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/5] bg-surface-container group">
 <img 
-src="/nosa-ebhomielen.jpg" 
+src="/nosa-ebhomielen.jpg?v=3" 
 alt="Nosa Ebhomielen, Founder of Holistic Concept Consulting" 
-className="w-full h-full object-cover object-[center_22%] group-hover:scale-105 transition-transform duration-700" 
+className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" 
 />
-<div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-<div className="absolute bottom-4 left-4 right-4 flex flex-col gap-1 text-white">
-<span className="px-3 py-1 rounded-full bg-primary/90 backdrop-blur-md font-label-sm text-label-sm font-semibold w-fit flex items-center gap-1.5 shadow-sm">
+<div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white">
+<span className="px-3 py-1 rounded-full bg-primary/95 backdrop-blur-md font-label-sm text-label-sm font-semibold flex items-center gap-1.5 shadow-md">
 <span className="material-symbols-outlined text-[16px] text-secondary-fixed">verified</span>
 Founder & Principal Consultant
 </span>
-<span className="font-caption text-caption text-slate-200">Holistic Concept Consulting</span>
 </div>
 </div>
 
