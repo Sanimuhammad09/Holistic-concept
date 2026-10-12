@@ -179,7 +179,11 @@ function RootComponent() {
                 <span className="font-headline-sm text-headline-sm text-white font-bold">Holistic Concept Consulting</span>
               </div>
               <p className="font-body-sm text-body-sm text-slate-400 max-w-md">Trusted and recognized for delivering ethical, strategic, and practical solutions across complex corporate landscapes, public sector mandates, and executive transitions.</p>
-              <div className="flex flex-col gap-1.5 pt-1 font-body-sm text-body-sm text-slate-300">
+              <div className="flex flex-col gap-2 pt-1 font-body-sm text-body-sm text-slate-300">
+                <div className="flex items-start gap-2 text-slate-300">
+                  <span className="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span>
+                  <span>1520 2 Avenue South Lethbridge, Alberta, T1J 0G1</span>
+                </div>
                 <a href="mailto:info@holisticconceptconsulting.com" className="flex items-center gap-2 hover:text-white transition-colors">
                   <span className="material-symbols-outlined text-[18px] text-primary">mail</span>
                   <span>info@holisticconceptconsulting.com</span>

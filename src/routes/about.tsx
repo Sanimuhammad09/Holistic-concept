@@ -369,8 +369,8 @@ Founder & Principal Consultant
 <span className="material-symbols-outlined text-[18px]">location_on</span>
 </div>
 <div className="flex flex-col">
-<span className="font-label-sm text-label-sm text-on-surface font-bold">Current Residence</span>
-<span className="font-caption text-caption text-on-surface-variant">Lethbridge, Alberta, Canada</span>
+<span className="font-label-sm text-label-sm text-on-surface font-bold">Office Address</span>
+<span className="font-caption text-caption text-on-surface-variant font-medium">1520 2 Avenue South Lethbridge, Alberta, T1J 0G1</span>
 </div>
 </div>
 </div>

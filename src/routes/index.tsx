@@ -400,6 +400,15 @@ function IndexComponent() {
                     </div>
                   </div>
                 </div>
+                <div className="mt-3 flex items-center gap-3 p-3.5 rounded-2xl bg-surface-container-lowest/10 backdrop-blur-md text-on-primary max-w-lg">
+                  <div className="w-10 h-10 rounded-xl bg-surface-container-high/30 text-secondary-fixed flex items-center justify-center shrink-0">
+                    <span className="material-symbols-outlined text-[20px]">location_on</span>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="font-caption text-caption uppercase tracking-wider text-surface-variant font-semibold">Office Address</span>
+                    <span className="font-body-sm text-body-sm font-medium">1520 2 Avenue South Lethbridge, Alberta, T1J 0G1</span>
+                  </div>
+                </div>
               </div>
               
               <div className="lg:col-span-5 bg-surface-container-lowest rounded-3xl p-8 shadow-2xl text-on-surface">

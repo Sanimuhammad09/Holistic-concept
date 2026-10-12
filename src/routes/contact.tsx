@@ -338,74 +338,55 @@ function Contact() {
 </ul>
 </div>
 </div>
-{/*  Regional Practice Hubs  */}
+{/*  Principal Office & Practice Headquarters  */}
 <div className="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 shadow-md">
 <div className="flex items-center justify-between mb-4">
-<h3 className="font-title-md text-title-md text-on-surface">Regional Practice Hubs</h3>
-<span className="font-caption text-caption text-on-surface-variant">4 Locations</span>
+<h3 className="font-title-md text-title-md text-on-surface font-bold">Principal Office & Practice Headquarters</h3>
+<span className="px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-caption text-caption font-semibold">Official Address</span>
 </div>
 <div className="flex flex-col gap-4">
-{/*  Toronto HQ  */}
-<div className="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex gap-3.5">
-<div className="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
-<span className="material-symbols-outlined text-[18px]">corporate_fare</span>
+{/*  Lethbridge Office Card  */}
+<div className="p-5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex gap-4 border-l-4 border-primary">
+<div className="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span className="material-symbols-outlined text-[22px]">location_on</span>
 </div>
 <div className="flex flex-col">
 <div className="flex items-center gap-2">
-<span className="font-label-md text-label-md text-on-surface font-bold">Toronto HQ (Bay Street)</span>
-<span className="px-2 py-0.5 rounded bg-primary text-on-primary font-caption text-caption">HQ</span>
+<span className="font-label-md text-label-md text-on-surface font-bold">Holistic Concept Consulting</span>
+<span className="px-2 py-0.5 rounded bg-primary text-on-primary font-caption text-caption font-semibold">HQ</span>
 </div>
-<span className="font-body-sm text-body-sm text-on-surface-variant mt-0.5">100 King Street West, Suite 5600, Toronto, ON M5X 1C9</span>
-<span className="font-caption text-caption text-primary font-semibold mt-1">Specialty: Corporate Injunctions & Board Governance</span>
-</div>
-</div>
-{/*  Ottawa  */}
-<div className="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex gap-3.5">
-<div className="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
-<span className="material-symbols-outlined text-[18px]">account_balance</span>
-</div>
-<div className="flex flex-col">
-<div className="flex items-center gap-2">
-<span className="font-label-md text-label-md text-on-surface font-bold">Ottawa (Parliament Hill)</span>
-</div>
-<span className="font-body-sm text-body-sm text-on-surface-variant mt-0.5">150 Metcalfe Street, 14th Floor, Ottawa, ON K2P 1P1</span>
-<span className="font-caption text-caption text-primary font-semibold mt-1">Specialty: Crown Agency Audits & Public Policy</span>
+<span className="font-body-md text-body-md text-on-surface font-semibold mt-1">1520 2 Avenue South Lethbridge, Alberta, T1J 0G1</span>
+<span className="font-caption text-caption text-primary font-semibold mt-1">Specialty: Workplace Investigations, Legal Advisory, Policy Architecture & Process Serving</span>
 </div>
 </div>
-{/*  Vancouver  */}
-<div className="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex gap-3.5">
-<div className="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
-<span className="material-symbols-outlined text-[18px]">domain_add</span>
+{/* Direct Channels */}
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+<div className="p-3.5 rounded-xl bg-surface-container-low flex items-center gap-3">
+<div className="w-9 h-9 rounded-lg bg-secondary-container text-on-secondary-fixed-variant flex items-center justify-center shrink-0">
+<span className="material-symbols-outlined text-[18px]">phone_in_talk</span>
 </div>
 <div className="flex flex-col">
-<div className="flex items-center gap-2">
-<span className="font-label-md text-label-md text-on-surface font-bold">Vancouver (Burrard Street)</span>
-</div>
-<span className="font-body-sm text-body-sm text-on-surface-variant mt-0.5">666 Burrard Street, Suite 2200, Vancouver, BC V6C 2X8</span>
-<span className="font-caption text-caption text-primary font-semibold mt-1">Specialty: Pacific Cross-Border & Resource Sectors</span>
+<span className="font-caption text-caption text-on-surface-variant font-semibold">Hotline</span>
+<a href="tel:+14033594972" className="font-body-sm text-body-sm font-bold text-on-surface hover:text-primary transition-colors">+1 (403) 359-4972</a>
 </div>
 </div>
-{/*  New York  */}
-<div className="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex gap-3.5">
-<div className="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
-<span className="material-symbols-outlined text-[18px]">public</span>
+<div className="p-3.5 rounded-xl bg-surface-container-low flex items-center gap-3">
+<div className="w-9 h-9 rounded-lg bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span className="material-symbols-outlined text-[18px]">mail</span>
 </div>
 <div className="flex flex-col">
-<div className="flex items-center gap-2">
-<span className="font-label-md text-label-md text-on-surface font-bold">New York (Rockefeller Center)</span>
-<span className="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-caption text-caption">US Liaison</span>
+<span className="font-caption text-caption text-on-surface-variant font-semibold">Official Desk</span>
+<a href="mailto:info@holisticconceptconsulting.com" className="font-body-sm text-body-sm font-bold text-primary hover:underline break-all">info@holisticconceptconsulting.com</a>
 </div>
-<span className="font-body-sm text-body-sm text-on-surface-variant mt-0.5">45 Rockefeller Plaza, 20th Floor, New York, NY 10111</span>
-<span className="font-caption text-caption text-primary font-semibold mt-1">Specialty: Cross-Border Arbitration & Escrow</span>
 </div>
 </div>
 </div>
 {/*  Virtual Security Note  */}
-<div className="mt-4 pt-4 flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<div className="mt-4 pt-4 border-t border-surface-container flex items-center justify-between text-on-surface-variant font-caption text-caption">
 <span className="flex items-center gap-1">
 <span className="material-symbols-outlined text-[14px] text-secondary">encrypted</span>
-                Encrypted Video Portals (Signal / PGP available)
-              </span>
+Encrypted Video Portals (Signal / PGP available)
+</span>
 <a className="text-primary hover:underline font-semibold" href="#">Security Spec →</a>
 </div>
 </div>
