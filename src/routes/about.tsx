@@ -396,9 +396,9 @@ Nosa Ebhomielen
 {/* Core Biography - Highlighted Presentation */}
 <div className="relative pl-6 border-l-4 border-primary py-1">
 <p className="font-body-lg text-body-lg text-on-surface leading-relaxed">
-<strong>Nosa Ebhomielen</strong> is a multifaceted business and legal specialist with over 15 years of experience. She has a Master of Business Administration (MBA) with distinction from the University of Gloucestershire in the United Kingdom and formidable legal expertise as a lawyer.
+<strong>Nosa Ebhomielen</strong> is a multifaceted business and legal specialist with over 15 years of experience. She has a Master of Business Administration (MBA) with distinction from the University of Gloucestershire in the United Kingdom and formidable legal expertise.
 </p>
-<p className="font-body-md text-body-md text-on-surface-variant leading-relaxed mt-4">
+<p className="font-body-lg text-body-lg text-on-surface leading-relaxed mt-4">
 She is a licensed investigator under the Security Services and Investigators Act by Alberta Justice and the Solicitor General. She is a board member for several non-profit organizations in the city of Alberta. She has lived in Nigeria and the United Kingdom and is currently residing in Lethbridge, Alberta.
 </p>
 </div>
@@ -409,9 +409,9 @@ She is a licensed investigator under the Security Services and Investigators Act
 <div className="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center">
 <span className="material-symbols-outlined text-[20px]">gavel</span>
 </div>
-<span className="font-label-md text-label-md font-bold text-on-surface">Legal Acumen & Practice</span>
+<span className="font-label-md text-label-md font-bold text-on-surface">Legal Acumen</span>
 <p className="font-body-sm text-body-sm text-on-surface-variant">
-Formidable legal expertise as a lawyer, guiding policy drafting, statutory compliance, and rigorous evidence gathering.
+Formidable legal expertise, guiding policy drafting, statutory compliance, and rigorous evidence gathering.
 </p>
 </div>
 
